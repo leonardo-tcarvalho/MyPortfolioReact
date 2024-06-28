@@ -21,7 +21,7 @@ export function Sidebar() {
         <Info type="BIRTHDAY" content="May 21, 2001" image={<Calendary />}/>
       </div>
       <div className="flex justify-center gap-4 w-full mt-7">
-        <a href="https://wa.me/11930143972" target="_blank">
+        <a href="https://www.instagram.com/cabelozl/" target="_blank">
           <Instagram />
         </a>
         <a href="https://www.linkedin.com/in/leonardo-r-carvalho/" target="_blank">
