@@ -6,3 +6,7 @@
   margin: 0;
   padding: 0;
 }
+
+.border-gradient {
+  background-image: linear-gradient(to bottom right, white, #27272a, #27272a);
+}
