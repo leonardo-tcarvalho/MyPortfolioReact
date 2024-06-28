@@ -13,7 +13,8 @@ export default {
         1: "1px"
       },
       boxShadow: {
-        5: "0px 0px 2px black"
+        5: "0px 0px 2px black",
+        10: "0px 0px 10px black"
       },
       dropShadow: {
         10: "-1px -5px 1px #22c55e"
