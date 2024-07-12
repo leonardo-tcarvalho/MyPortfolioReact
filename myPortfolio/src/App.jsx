@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { Sidebar } from "./components/Sidebar";
-import { Home } from "./pages/Home";
 import { About } from "./pages/About";
+import { Skills } from "./pages/Skills";
 import { Contacts } from "./pages/Contacts";
 
 export function App() {
@@ -11,8 +11,8 @@ export function App() {
         <Sidebar />
         <Router>
           <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/about" element={<About/>}/>
+            <Route path="/" element={<About/>}/>
+            <Route path="/skills" element={<Skills/>}/>
             <Route path="/contacts" element={<Contacts />}/>
           </Routes>
         </Router>

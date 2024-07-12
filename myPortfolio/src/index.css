@@ -19,7 +19,7 @@
 }
 
 .scroll-bar::-webkit-scrollbar-thumb {
-  background-color: #6b21a8; /* Cor padrão zinc-400 do Tailwind */
+  background-color: #7c3aed; /* Cor padrão zinc-400 do Tailwind */
   border-radius: 10px;
 }
 
