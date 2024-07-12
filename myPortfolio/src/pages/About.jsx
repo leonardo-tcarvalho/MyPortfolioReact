@@ -30,7 +30,12 @@ export function About() {
                     <span className="w-10 h-1 bg-purple-500"></span>
                 </div>
                 <div className="w-full h-[90rem] p-5">
-                    <p className="text-white">Hello, my name is Leonardo and I'm a Web Developer at Grupo Anchieta. I currently work with website development and responsive interfaces, mobile applications and user support. <br/> <br/> My job is to ensure that our websites and platforms have the best optimization and quality design, I am always looking to improve my knowledge. I am currently studying a Bachelor's degree in Computer Science, and I am looking for new opportunities that will allow me to improve my English.</p>
+                    <p className="text-white text-[1.2em]">Hello, my name is Leonardo and I'm a Web Developer at Grupo Anchieta. I currently work with website development and responsive interfaces, mobile applications and user support. <br/> <br/> My job is to ensure that our websites and platforms have the best optimization and quality design, I am always looking to improve my knowledge. I am currently studying a Bachelor's degree in Computer Science, and I am looking for new opportunities that will allow me to improve my English.</p>
+                    <div className="flex flex-col w-full gap-3 mt-5">
+                        <h1 className="text-white text-2xl font-semibold">Stacks</h1>
+                        <span className="w-14 h-1 bg-purple-500"></span>
+                    </div>
+
                 </div>
             </div>
         </div>
