@@ -10,3 +10,20 @@
 .border-gradient {
   background-image: linear-gradient(to bottom right, white, #27272a, #27272a);
 }
+
+.scroll-bar::-webkit-scrollbar {
+  position: absolute;
+  width: 8px;
+  height: 10px;
+  background-color: #27272a; /* Cor padrão zinc-800 do Tailwind */
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #6b21a8; /* Cor padrão zinc-400 do Tailwind */
+  border-radius: 10px;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb:hover {
+  background-color: #a855f7; /* Cor padrão zinc-500 do Tailwind */
+}
+

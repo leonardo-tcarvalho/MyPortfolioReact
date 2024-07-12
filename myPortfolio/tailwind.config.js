@@ -17,7 +17,7 @@ export default {
         10: "0px 0px 10px black"
       },
       dropShadow: {
-        10: "-1px -5px 1px #fe6de2"
+        10: "0px 0px 5px #000"
       },
       borderRadius: {
         "2.5xl": "1.25rem"

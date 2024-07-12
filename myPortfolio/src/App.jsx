@@ -6,8 +6,8 @@ import { Contacts } from "./pages/Contacts";
 
 export function App() {
   return (
-    <div className="min-w-full min-h-screen py-10 bg-zinc-950">
-      <div className="grid grid-cols-1/4 w-10/12 gap-4 mx-auto">
+    <div className="w-full min-h-screen py-10 bg-zinc-950">
+      <div className="max-w-[90rem] grid grid-cols-1/4 w-10/12 gap-4 mx-auto">
         <Sidebar />
         <Router>
           <Routes>
