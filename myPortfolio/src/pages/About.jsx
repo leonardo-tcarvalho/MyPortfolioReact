@@ -40,7 +40,7 @@ export function About() {
                     <div className="flex flex-col w-full gap-3 mt-5">
                         <h1 className="text-white text-2xl font-semibold">Principais Stacks</h1>
                         <span className="w-14 h-1 bg-purple-500"></span>
-                        <div className="flex justify-center gap-10">
+                        <div className="flex justify-center gap-10 mt-5">
                             <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10">
                                 <img src={IconTS} alt="TypeScript" className="w-16 h-16"/>
                                 <p className="text-white">TypeScript</p>

@@ -27,7 +27,8 @@ export function Contacts() {
                     <h1 className="text-white text-3xl font-semibold">Contatos</h1>
                     <span className="w-10 h-1 bg-purple-500"></span>
                 </div>
-                <div className="w-full h-[90rem] p-5">
+                <div className="w-full p-5">
+                    
                 </div>
             </div>
         </div>
