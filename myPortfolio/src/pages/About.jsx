@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
 import IconTS from "../images/IconTS.png"
 import IconJS from "../images/IconJS.png"
-import IconTailWind from "../images/IconTailWind.png"
+import IconPHP from "../images/IconPHP.png"
 import IconSQL from "../images/IconSQL.png"
 import IconReactJS from "../images/IconReactJS.png"
+import IconMongoDB from "../images/IconMongoDB.png"
 import "../index.css"
 
 export function About() {
@@ -34,17 +35,36 @@ export function About() {
                     <h1 className="text-white text-3xl font-semibold">Sobre</h1>
                     <span className="w-10 h-1 bg-purple-500"></span>
                 </div>
-                <div className="w-full h-[90rem] p-5">
+                <div className="flex flex-col w-full gap-10 p-5">
                     <p className="text-white text-[1.2em]">Olá, meu nome é Leonardo e sou Desenvolvedor Web. Atualmente estou trabalhando com desenvolvimento de websites e interfaces responsivas. <br/> <br/> Meu trabalho é garantir que nossos sites e plataformas tenham a melhor otimização e design de qualidade, estou sempre em busca de aprimorar meus conhecimentos. Atualmente estou cursando bacharelado em Ciência da Computação e estou em busca de novas oportunidades que me permitam aprimorar meu inglês.</p>
                     <div className="flex flex-col w-full gap-3 mt-5">
                         <h1 className="text-white text-2xl font-semibold">Principais Stacks</h1>
                         <span className="w-14 h-1 bg-purple-500"></span>
-                        <div className="flex justify-start gap-10">
-                            <img src={IconTS} alt="TypeScript" className="w-16 h-16 hover:scale-125 duration-300 hover:duration-300"/>
-                            <img src={IconJS} alt="" className="w-16 h-16"/>
-                            <img src={IconTailWind} alt="" className="w-20 h-16"/>
-                            <img src={IconReactJS} alt="" className="w-18 h-16"/>
-                            <img src={IconSQL} alt="" className="w-16 h-16"/>
+                        <div className="flex justify-center gap-10">
+                            <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10">
+                                <img src={IconTS} alt="TypeScript" className="w-16 h-16"/>
+                                <p className="text-white">TypeScript</p>
+                            </div>
+                            <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10">
+                                <img src={IconJS} alt="" className="w-16 h-16"/>
+                                <p className="text-white">JavaScript</p>
+                            </div>
+                            <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10">
+                                <img src={IconReactJS} alt="" className="w-18 h-16"/>
+                                <p className="text-white">React JS</p>
+                            </div>
+                            <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10">
+                                <img src={IconPHP} alt="" className="w-20 h-16"/>
+                                <p className="text-white">PHP</p>
+                            </div>
+                            <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10">
+                                <img src={IconSQL} alt="" className="w-16 h-16"/>
+                                <p className="text-white">SQL Server</p>
+                            </div>
+                            <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10">
+                                <img src={IconMongoDB} alt="" className="w-16 h-16"/>
+                                <p className="text-white">Mongo DB</p>
+                            </div>
                         </div>
                     </div>
                 </div>
