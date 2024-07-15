@@ -32,15 +32,15 @@ export function About() {
             
             <div className="w-full max-h-[92%] mt-10  overflow-y-auto scroll-bar">
                 <div className="flex flex-col w-full gap-3 px-5">
-                    <h1 className="text-white text-3xl font-semibold">Sobre</h1>
+                    <h1 className="text-white text-3xl font-semibold">Sobre</h1>    
                     <span className="w-10 h-1 bg-purple-500"></span>
                 </div>
                 <div className="flex flex-col w-full gap-10 p-5">
-                    <p className="text-white text-[1.2em]">Olá, meu nome é Leonardo e sou Desenvolvedor Web. Atualmente estou trabalhando com desenvolvimento de websites e interfaces responsivas. <br/> <br/> Meu trabalho é garantir que nossos sites e plataformas tenham a melhor otimização e design de qualidade, estou sempre em busca de aprimorar meus conhecimentos. Atualmente estou cursando bacharelado em Ciência da Computação e estou em busca de novas oportunidades que me permitam aprimorar meu inglês.</p>
+                    <p className="text-white text-[1.2em]">Olá, meu nome é Leonardo e sou Desenvolvedor Web há 2 Anos. Atualmente estou trabalhando com desenvolvimento de websites e interfaces responsivas. Meu trabalho é garantir que nossos sites e plataformas tenham a melhor otimização e design de qualidade, estou sempre em busca de aprimorar meus conhecimentos. <br/> Estou cursando bacharelado em Ciência da Computação e estou em busca de novas oportunidades que me permitam aprimorar minhas habilidades e meu nivel de inglês.</p>
                     <div className="flex flex-col w-full gap-3 mt-5">
                         <h1 className="text-white text-2xl font-semibold">Principais Stacks</h1>
                         <span className="w-14 h-1 bg-purple-500"></span>
-                        <div className="flex justify-center gap-10 mt-5">
+                        <div className="flex flex-wrap justify-center gap-10 mt-5">
                             <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10">
                                 <img src={IconTS} alt="TypeScript" className="w-16 h-16"/>
                                 <p className="text-white">TypeScript</p>
