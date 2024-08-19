@@ -1,8 +1,7 @@
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Sidebar } from "./components/Sidebar";
 import { About } from "./pages/About";
 import { Skills } from "./pages/Skills";
-import { Contacts } from "./pages/Contacts";
 
 export function App() {
   return (
@@ -11,12 +10,11 @@ export function App() {
         <Sidebar />
         <Router>
           <Routes>
-            <Route path="/" element={<About/>}/>
-            <Route path="/skills" element={<Skills/>}/>
-            <Route path="/contacts" element={<Contacts />}/>
+            <Route path="/" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
           </Routes>
         </Router>
       </div>
     </div>
-  )
+  );
 }
