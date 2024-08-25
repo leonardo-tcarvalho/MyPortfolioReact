@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 export function CardProject({ numberProject }) {
@@ -28,16 +29,15 @@ export function CardProject({ numberProject }) {
           ))}
         </Slider>
       </div>
-      <div className="flex flex-col gap-5 w-full mx-auto mt-20">
-        <p className="m-auto mt-2 text-gray-300">{numberProject.description}</p>
-        <a
-          href={numberProject.siteUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mx-auto mt-2 text-blue-500 hover:underline"
-        >
-          Visitar o site
-        </a>
+      <div className="flex flex-col items-center gap-5 w-full mx-auto mt-20">
+        <p className="text-justify m-auto mt-2 text-gray-300">
+          {numberProject.description}
+        </p>
+        <Link to={numberProject.siteUrl} target="_blank">
+          <div className="mx-a mt-2 py-1 px-10 rounded-md text-white bg-purple-600">
+            Visitar o site
+          </div>
+        </Link>
       </div>
     </div>
   );
