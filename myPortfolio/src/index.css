@@ -34,3 +34,12 @@
 .custom-slider .slick-dots li.slick-active button:before {
   color: #a855f7; /* Cor do dot ativo */
 }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

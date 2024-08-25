@@ -8,7 +8,7 @@ export function CardProject({ numberProject }) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false, // Adicione esta linha para remover as setas laterais
+    arrows: false, // Remove as setas laterais
   };
 
   return (
@@ -18,13 +18,21 @@ export function CardProject({ numberProject }) {
           {numberProject.imageUrls.map((image, index) => (
             <div
               key={index}
-              className="flex justify-center items-center h-full"
+              className="flex justify-center items-center h-full relative"
             >
-              <img
-                src={image}
-                alt={`Imagem ${index + 1}`}
-                className="w-full h-auto object-cover"
-              />
+              {index === 3 ? (
+                // Mostra o carregador se for a quarta imagem
+                <div className="absolute inset-0 flex items-center justify-center bg-gray-100 rounded-lg">
+                  <div className="w-16 h-16 border-t-4 border-blue-500 border-solid rounded-full animate-spin"></div>
+                </div>
+              ) : (
+                // Mostra a imagem normalmente para outras posições
+                <img
+                  src={image}
+                  alt={`Imagem ${index + 1}`}
+                  className="w-full h-auto object-cover"
+                />
+              )}
             </div>
           ))}
         </Slider>
@@ -34,7 +42,7 @@ export function CardProject({ numberProject }) {
           {numberProject.description}
         </p>
         <Link to={numberProject.siteUrl} target="_blank">
-          <div className="mx-a mt-2 py-1 px-10 rounded-md text-white bg-purple-600">
+          <div className="mx-auto mt-2 py-1 px-10 rounded-md text-white bg-purple-600">
             Visitar o site
           </div>
         </Link>

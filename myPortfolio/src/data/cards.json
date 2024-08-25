@@ -37,7 +37,7 @@
       "/src/images/projects/siteCorretor/img3.png",
       "/src/images/projects/siteCorretor/img4.png"
     ],
-    "siteUrl": "https://example.com/site4",
-    "description": "Esta é a descrição para o quarto card com várias imagens."
+    "siteUrl": "",
+    "description": "Este projeto é um site desenvolvido para um corretor de imóveis, utilizando React e Tailwind. A aplicação oferece uma plataforma intuitiva e eficiente para o gerenciamento de propriedades. O corretor pode adicionar, editar e remover imóveis, cada um com detalhes como fotos, preços e descrições. O design responsivo garante que o site seja visualmente atraente e funcional em qualquer dispositivo. O deploy e gerenciamento da aplicação são realizados no Google Cloud, assegurando alta disponibilidade e desempenho confiável."
   }
 ]
