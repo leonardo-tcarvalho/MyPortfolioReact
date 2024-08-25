@@ -3,6 +3,8 @@ import { useState } from "react";
 import { MenuIcon } from "../images/MenuIcon";
 import { CloseMenu } from "../images/CloseMenu";
 import { SidebarMenu } from "../components/SidebarMenu";
+import { CardProject } from "../components/CardProject";
+import data from "/src/data/cards.json";
 
 export function Skills() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
@@ -54,7 +56,13 @@ export function Skills() {
           <h1 className="text-white text-3xl font-semibold">Projetos</h1>
           <span className="w-10 h-1 bg-purple-500"></span>
         </div>
-        <div className="w-full p-5"></div>
+        <div className="flex justify-center w-full p-5">
+          <div className="grid grid-cols-1 items-center gap-10 max-lg:w-full w-4/5">
+            {data.map((project, index) => (
+              <CardProject key={index} numberProject={project} />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -25,3 +25,12 @@
 .scroll-bar::-webkit-scrollbar-thumb:hover {
   background-color: #a855f7; /* Cor padrão zinc-500 do Tailwind */
 }
+
+/* Adicione este CSS no arquivo de estilos do seu projeto */
+.custom-slider .slick-dots li button:before {
+  color: #a855f7; /* Cor do dot */
+}
+
+.custom-slider .slick-dots li.slick-active button:before {
+  color: #a855f7; /* Cor do dot ativo */
+}

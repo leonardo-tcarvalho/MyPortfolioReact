@@ -1,0 +1,43 @@
+[
+  {
+    "imageUrls": [
+      "/src/images/projects/appChamadaAlunos/img1.png",
+      "/src/images/projects/appChamadaAlunos/img2.png",
+      "/src/images/projects/appChamadaAlunos/img3.png",
+      "/src/images/projects/appChamadaAlunos/img4.png"
+    ],
+    "siteUrl": "https://example.com/site1",
+    "description": "Criação de um site para controle de chamadas, criado com React, SQL, PHP e Tailwind, esse aplicativo web permite que você cadastre alunos, docentes e turmas. Neste projeto fui responsavel por criar relações de tabelas, design responsivo e o back-end para realização do CRUD."
+  },
+  {
+    "imageUrls": [
+      "/src/images/projects/listaDeTarefas/img1.png",
+      "/src/images/projects/listaDeTarefas/img2.png",
+      "/src/images/projects/listaDeTarefas/img3.png",
+      "/src/images/projects/listaDeTarefas/img4.png"
+    ],
+    "siteUrl": "https://example.com/site2",
+    "description": "Esta é a descrição para o segundo card com várias imagens."
+  },
+  {
+    "imageUrls": [
+      "/src/images/projects/myFirstPortfolio/img1.png",
+      "/src/images/projects/myFirstPortfolio/img2.png",
+      "/src/images/projects/myFirstPortfolio/img3.png",
+      "/src/images/projects/myFirstPortfolio/img4.png",
+      "/src/images/projects/myFirstPortfolio/img5.png"
+    ],
+    "siteUrl": "https://example.com/site3",
+    "description": "Esta é a descrição para o terceiro card com várias imagens."
+  },
+  {
+    "imageUrls": [
+      "/src/images/projects/siteCorretor/img1.png",
+      "/src/images/projects/siteCorretor/img2.png",
+      "/src/images/projects/siteCorretor/img3.png",
+      "/src/images/projects/siteCorretor/img4.png"
+    ],
+    "siteUrl": "https://example.com/site4",
+    "description": "Esta é a descrição para o quarto card com várias imagens."
+  }
+]
