@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function Skills() {
   return (
-    <div className="relative w-full min-h-[40rem] max-h-[40rem] rounded-2xl border-1 border-zinc-700 bg-zinc-800">
+    <div className="relative w-full max-lg:h-screen lg:min-h-[40rem] lg:max-h-[96rem] lg:rounded-2xl border-1 border-zinc-700 bg-zinc-800">
       <nav className="absolute flex w-full justify-end">
         <ul className="flex justify-center items-center w-2/4 h-10 bg-zinc-800 border-zinc-700 border-1 rounded-tr-2xl rounded-bl-2xl shadow-5">
           <Link className="w-2/4 h-full" to="/">
