@@ -1,10 +1,21 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { MenuIcon } from "../images/MenuIcon";
 
 export function Skills() {
+  const [sidebarVisible, setSidebarVisible] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarVisible(!sidebarVisible);
+  };
+
   return (
-    <div className="relative w-full max-lg:h-screen lg:min-h-[40rem] lg:max-h-[96rem] lg:rounded-2xl border-1 border-zinc-700 bg-zinc-800">
-      <nav className="absolute flex w-full justify-end">
-        <ul className="flex justify-center items-center w-2/4 h-10 bg-zinc-800 border-zinc-700 border-1 rounded-tr-2xl rounded-bl-2xl shadow-5">
+    <div className="relative w-full max-lg:h-screen lg:min-h-[40rem] lg:max-h-[96rem] lg:rounded-2xl max-xl:border-none border-1 border-zinc-700 bg-zinc-800">
+      <nav className="absolute flex w-full max-lg:justify-between justify-end">
+        <span onClick={toggleSidebar} className="xl:hidden p-4">
+          <MenuIcon />
+        </span>
+        <ul className="max-lg:hidden flex justify-center items-center w-2/4 h-10 bg-zinc-800 border-zinc-700 border-1 rounded-tr-2xl rounded-bl-2xl shadow-5">
           <Link className="w-2/4 h-full" to="/">
             <span className="flex h-full items-center justify-center rounded-bl-2xl hover:shadow-inner hover:shadow-zinc-900 hover:duration-150 group">
               <p className="text-xl text-purple-500 group-hover:text-zinc-300">
@@ -19,7 +30,7 @@ export function Skills() {
           </Link>
         </ul>
       </nav>
-      <div className="w-full max-h-[92%] mt-10  overflow-y-auto scroll-bar">
+      <div className="w-full max-lg:max-h-[96%] max-h-[93%] max-lg:mt-20 mt-10 overflow-y-auto scroll-bar">
         <div className="flex flex-col w-full gap-3 px-5">
           <h1 className="text-white text-3xl font-semibold">Projetos</h1>
           <span className="w-10 h-1 bg-purple-500"></span>

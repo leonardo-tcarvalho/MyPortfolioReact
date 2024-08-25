@@ -13,9 +13,8 @@
 
 .scroll-bar::-webkit-scrollbar {
   position: absolute;
-  width: 8px;
+  width: 5px;
   height: 10px;
-  background-color: #27272a; /* Cor padrão zinc-800 do Tailwind */
 }
 
 .scroll-bar::-webkit-scrollbar-thumb {
@@ -26,4 +25,3 @@
 .scroll-bar::-webkit-scrollbar-thumb:hover {
   background-color: #a855f7; /* Cor padrão zinc-500 do Tailwind */
 }
-
