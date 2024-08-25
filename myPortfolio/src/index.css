@@ -18,21 +18,20 @@
 }
 
 .scroll-bar::-webkit-scrollbar-thumb {
-  background-color: #7c3aed; /* Cor padrão zinc-400 do Tailwind */
+  background-color: #7c3aed;
   border-radius: 10px;
 }
 
 .scroll-bar::-webkit-scrollbar-thumb:hover {
-  background-color: #a855f7; /* Cor padrão zinc-500 do Tailwind */
+  background-color: #a855f7;
 }
 
-/* Adicione este CSS no arquivo de estilos do seu projeto */
 .custom-slider .slick-dots li button:before {
-  color: #a855f7; /* Cor do dot */
+  color: #a855f7;
 }
 
 .custom-slider .slick-dots li.slick-active button:before {
-  color: #a855f7; /* Cor do dot ativo */
+  color: #a855f7;
 }
 
 @keyframes spin {

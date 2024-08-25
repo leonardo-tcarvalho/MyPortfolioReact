@@ -15,7 +15,6 @@ export function CardProject({ numberProject }) {
     <div className="w-full h-auto bg-zinc-950 border-1 border-zinc-600 p-4 rounded-lg shadow-lg">
       <div className="relative">
         {numberProject.siteUrl === "undefined" ? (
-          // Mostra o carregador se for a quarta imagem
           <div className="inset-0 flex items-center justify-center p-10 rounded-lg">
             <div className="w-40 h-40 border-t-4 border-purple-600 border-solid rounded-full animate-spin"></div>
           </div>
