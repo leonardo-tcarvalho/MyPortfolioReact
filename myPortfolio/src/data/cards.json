@@ -6,7 +6,7 @@
       "/src/images/projects/appChamadaAlunos/img3.png",
       "/src/images/projects/appChamadaAlunos/img4.png"
     ],
-    "siteUrl": "https://example.com/site1",
+    "siteUrl": "https://github.com/leonardo-tcarvalho/appChamadaAlunos",
     "description": "Desenvolvi um site para controle de chamadas utilizando React, SQL, PHP e Tailwind. O aplicativo permite o cadastro de alunos, docentes e turmas. Fui responsável por criar as relações entre as tabelas, implementar um design responsivo e desenvolver o back-end para realizar operações CRUD."
   },
   {
@@ -37,7 +37,7 @@
       "/src/images/projects/siteCorretor/img3.png",
       "/src/images/projects/siteCorretor/img4.png"
     ],
-    "siteUrl": "",
+    "siteUrl": "undefined",
     "description": "Este projeto é um site desenvolvido para um corretor de imóveis, utilizando React e Tailwind. A aplicação oferece uma plataforma intuitiva e eficiente para o gerenciamento de propriedades. O corretor pode adicionar, editar e remover imóveis, cada um com detalhes como fotos, preços e descrições. O design responsivo garante que o site seja visualmente atraente e funcional em qualquer dispositivo. O deploy e gerenciamento da aplicação são realizados no Google Cloud, assegurando alta disponibilidade e desempenho confiável."
   }
 ]

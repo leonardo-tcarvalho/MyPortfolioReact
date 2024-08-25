@@ -51,7 +51,7 @@ export function Skills() {
           ></div>
         </div>
       </nav>
-      <div className="w-full max-lg:max-h-[92%] max-h-[92%] max-lg:mt-20 mt-10 overflow-y-auto scroll-bar">
+      <div className="w-full max-lg:max-h-[91%] max-h-[92%] max-lg:mt-20 mt-10 overflow-y-auto scroll-bar">
         <div className="flex flex-col w-full gap-3 px-5">
           <h1 className="text-white text-3xl font-semibold">Projetos</h1>
           <span className="w-10 h-1 bg-purple-500"></span>

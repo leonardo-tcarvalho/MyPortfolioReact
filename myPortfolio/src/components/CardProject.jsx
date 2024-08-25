@@ -14,28 +14,27 @@ export function CardProject({ numberProject }) {
   return (
     <div className="w-full h-auto bg-zinc-950 border-1 border-zinc-600 p-4 rounded-lg shadow-lg">
       <div className="relative">
-        <Slider {...settings} className="custom-slider">
-          {numberProject.imageUrls.map((image, index) => (
-            <div
-              key={index}
-              className="flex justify-center items-center h-full relative"
-            >
-              {index === 3 ? (
-                // Mostra o carregador se for a quarta imagem
-                <div className="absolute inset-0 flex items-center justify-center bg-gray-100 rounded-lg">
-                  <div className="w-16 h-16 border-t-4 border-blue-500 border-solid rounded-full animate-spin"></div>
-                </div>
-              ) : (
-                // Mostra a imagem normalmente para outras posições
+        {numberProject.siteUrl === "undefined" ? (
+          // Mostra o carregador se for a quarta imagem
+          <div className="inset-0 flex items-center justify-center p-10 rounded-lg">
+            <div className="w-40 h-40 border-t-4 border-purple-600 border-solid rounded-full animate-spin"></div>
+          </div>
+        ) : (
+          <Slider {...settings} className="custom-slider">
+            {numberProject.imageUrls.map((image, index) => (
+              <div
+                key={index}
+                className="flex justify-center items-center h-full relative"
+              >
                 <img
                   src={image}
                   alt={`Imagem ${index + 1}`}
                   className="w-full h-auto object-cover"
                 />
-              )}
-            </div>
-          ))}
-        </Slider>
+              </div>
+            ))}
+          </Slider>
+        )}
       </div>
       <div className="flex flex-col items-center gap-5 w-full mx-auto mt-20">
         <p className="text-justify m-auto mt-2 text-gray-300">
