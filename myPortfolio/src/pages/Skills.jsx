@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { MenuIcon } from "../images/MenuIcon";
+import { CloseMenu } from "../images/CloseMenu";
+import { SidebarMenu } from "../components/SidebarMenu";
 
 export function Skills() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
@@ -29,8 +31,25 @@ export function Skills() {
             </span>
           </Link>
         </ul>
+
+        <div
+          className={`lg:hidden z-50 absolute top-0 ${sidebarVisible ? "translate-x-0" : "-translate-x-[101%]"} duration-300 flex w-full h-screen`}
+        >
+          <div className="flex flex-col w-5/6 h-screen bg-zinc-800">
+            <div className="absolute flex w-full max-lg:justify-start ">
+              <span onClick={toggleSidebar} className="p-4">
+                <CloseMenu />
+              </span>
+            </div>
+            <SidebarMenu />
+          </div>
+          <div
+            onClick={toggleSidebar}
+            className="w-1/6 h-screen bg-zinc-950 duration-1000 bg-opacity-50"
+          ></div>
+        </div>
       </nav>
-      <div className="w-full max-lg:max-h-[96%] max-h-[93%] max-lg:mt-20 mt-10 overflow-y-auto scroll-bar">
+      <div className="w-full max-lg:max-h-[92%] max-h-[92%] max-lg:mt-20 mt-10 overflow-y-auto scroll-bar">
         <div className="flex flex-col w-full gap-3 px-5">
           <h1 className="text-white text-3xl font-semibold">Projetos</h1>
           <span className="w-10 h-1 bg-purple-500"></span>

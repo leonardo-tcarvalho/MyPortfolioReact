@@ -20,8 +20,8 @@ export function About() {
 
   return (
     <div className="relative w-full max-lg:h-screen lg:min-h-[40rem] lg:max-h-[96rem] lg:rounded-2xl max-xl:border-none border-1 border-zinc-700 bg-zinc-800">
-      <nav className="absolute flex w-full max-lg:justify-start justify-end">
-        <span onClick={toggleSidebar} className="lg:hidden p-4">
+      <nav className="absolute flex w-full max-lg:justify-between justify-end">
+        <span onClick={toggleSidebar} className="xl:hidden p-4">
           <MenuIcon />
         </span>
         <ul className="max-lg:hidden flex justify-center items-center w-2/4 h-10 bg-zinc-800 border-zinc-700 border-1 rounded-tr-2xl rounded-bl-2xl shadow-5">

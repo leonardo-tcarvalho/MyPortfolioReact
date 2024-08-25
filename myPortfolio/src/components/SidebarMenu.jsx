@@ -12,7 +12,7 @@ export function SidebarMenu() {
         Leonardo Carvalho
       </p>
       <div className="mt-4 bg-purple-600 px-4 py-1 rounded-md shadow-md">
-        <p className="text-zinc-200 font-bold">Desenvolvedor Web</p>
+        <p className="text-zinc-200 ">Desenvolvedor Web</p>
       </div>
       <span className="w-full h-1 my-5 border-b-1 border-zinc-700"></span>
       <div className="flex flex-col w-full gap-5"></div>
@@ -31,16 +31,16 @@ export function SidebarMenu() {
         </a>
       </div>
       <div
-        className="flex flex-col gap-5 w-full pt-10
+        className="flex flex-col items-center gap-5 w-full pt-10
       "
       >
         <Link to="/">
-          <p className="text-center px-4 py-2 text-xl text-zinc-300 bg-purple-600 rounded-md">
+          <p className="max-sm:w-52 w-96 text-center px-4 py-2 text-xl text-zinc-300 bg-purple-600 rounded-md">
             Sobre
           </p>
         </Link>
         <Link to="/skills">
-          <p className="text-center px-4 py-2 text-xl text-zinc-300 bg-purple-600 rounded-md">
+          <p className="max-sm:w-52 w-96 text-center px-4 py-2 text-xl text-zinc-300 bg-purple-600 rounded-md">
             Projetos
           </p>
         </Link>
