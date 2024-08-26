@@ -35,7 +35,7 @@ export function CardProject({ numberProject }) {
           </Slider>
         )}
       </div>
-      <div className="flex flex-col items-center gap-5 w-full mx-auto mt-20">
+      <div className="flex flex-col items-center gap-5 w-full mx-auto mt-5">
         <p className="text-justify m-auto mt-2 text-gray-300">
           {numberProject.description}
         </p>

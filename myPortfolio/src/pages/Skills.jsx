@@ -4,7 +4,21 @@ import { MenuIcon } from "../images/MenuIcon";
 import { CloseMenu } from "../images/CloseMenu";
 import { SidebarMenu } from "../components/SidebarMenu";
 import { CardProject } from "../components/CardProject";
-import data from "/src/data/cards.json";
+import image1 from "/src/images/projects/appChamadaAlunos/img1.png";
+import image2 from "/src/images/projects/appChamadaAlunos/img2.png";
+import image3 from "/src/images/projects/appChamadaAlunos/img3.png";
+import image4 from "/src/images/projects/appChamadaAlunos/img4.png";
+
+import image5 from "/src/images/projects/listaDeTarefas/img1.png";
+import image6 from "/src/images/projects/listaDeTarefas/img2.png";
+import image7 from "/src/images/projects/listaDeTarefas/img3.png";
+import image8 from "/src/images/projects/listaDeTarefas/img4.png";
+
+import image9 from "/src/images/projects/myFirstPortfolio/img1.png";
+import image10 from "/src/images/projects/myFirstPortfolio/img1.png";
+import image11 from "/src/images/projects/myFirstPortfolio/img1.png";
+import image12 from "/src/images/projects/myFirstPortfolio/img1.png";
+import image13 from "/src/images/projects/myFirstPortfolio/img1.png";
 
 export function Skills() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
@@ -12,6 +26,33 @@ export function Skills() {
   const toggleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
   };
+
+  const data = [
+    {
+      imageUrls: [image1, image2, image3, image4],
+      siteUrl: "https://github.com/leonardo-tcarvalho/appChamadaAlunos",
+      description:
+        "Desenvolvi um site para controle de chamadas utilizando React, SQL, PHP e Tailwind. O aplicativo permite o cadastro de alunos, docentes e turmas. Fui responsável por criar as relações entre as tabelas, implementar um design responsivo e desenvolver o back-end para realizar operações CRUD.",
+    },
+    {
+      imageUrls: [image5, image6, image7, image8],
+      siteUrl: "https://example.com/site2",
+      description:
+        "Criei uma Lista de Tarefas responsiva e funcional usando HTML, CSS e JavaScript. O projeto permite adicionar, editar e remover tarefas, oferecendo uma experiência intuitiva em diversos dispositivos.",
+    },
+    {
+      imageUrls: [image9, image10, image11, image12, image13],
+      siteUrl: "https://example.com/site3",
+      description:
+        "Este foi meu primeiro portfólio pessoal, desenvolvido para aprimorar minhas habilidades e conhecimentos. Utilizei Bootstrap para um design responsivo e estilizado, e combinei JavaScript, HTML e CSS para criar uma interface intuitiva. Esse projeto foi fundamental para melhorar meu conhecimento e experiência no desenvolvimento web.",
+    },
+    {
+      imageUrls: [],
+      siteUrl: "undefined",
+      description:
+        "Este projeto é um site desenvolvido para um corretor de imóveis, utilizando React e Tailwind. A aplicação oferece uma plataforma intuitiva e eficiente para o gerenciamento de propriedades. O corretor pode adicionar, editar e remover imóveis, cada um com detalhes como fotos, preços e descrições. O design responsivo garante que o site seja visualmente atraente e funcional em qualquer dispositivo. O deploy e gerenciamento da aplicação são realizados no Google Cloud, assegurando alta disponibilidade e desempenho confiável.",
+    },
+  ];
 
   return (
     <div className="relative w-full max-lg:h-screen lg:min-h-[40rem] lg:max-h-[50rem] lg:rounded-2xl max-lg:border-none border-1 border-zinc-700 bg-zinc-800">
