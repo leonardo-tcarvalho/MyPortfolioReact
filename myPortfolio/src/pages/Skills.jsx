@@ -30,7 +30,7 @@ export function Skills() {
   const data = [
     {
       imageUrls: [image1, image2, image3, image4],
-      siteUrl: "https://github.com/leonardo-tcarvalho/appChamadaAlunos",
+      siteUrl: "https://app-chamada-alunos.vercel.app/",
       description:
         "Desenvolvi um site para controle de chamadas utilizando React, SQL, PHP e Tailwind. O aplicativo permite o cadastro de alunos, docentes e turmas. Fui responsável por criar as relações entre as tabelas, implementar um design responsivo e desenvolver o back-end para realizar operações CRUD.",
     },

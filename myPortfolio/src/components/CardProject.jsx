@@ -37,8 +37,7 @@ export function CardProject({ numberProject }) {
       </div>
       <div className="flex flex-col items-center gap-5 w-full mx-auto mt-10">
         <div>
-          {numberProject.siteUrl ===
-            "https://github.com/leonardo-tcarvalho/appChamadaAlunos" ||
+          {numberProject.siteUrl === "https://app-chamada-alunos.vercel.app/" ||
           numberProject.siteUrl === "undefined" ? (
             <>
               <p className="text-center bg-red-600 px-10 py-2">
