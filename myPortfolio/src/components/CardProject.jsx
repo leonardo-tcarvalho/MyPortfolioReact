@@ -35,10 +35,25 @@ export function CardProject({ numberProject }) {
           </Slider>
         )}
       </div>
-      <div className="flex flex-col items-center gap-5 w-full mx-auto mt-5">
-        <p className="text-justify m-auto mt-2 text-gray-300">
-          {numberProject.description}
-        </p>
+      <div className="flex flex-col items-center gap-5 w-full mx-auto mt-10">
+        <div>
+          {numberProject.siteUrl ===
+            "https://github.com/leonardo-tcarvalho/appChamadaAlunos" ||
+          numberProject.siteUrl === "undefined" ? (
+            <>
+              <p className="text-center bg-red-600 px-10 py-2">
+                SITE EM DESENVOLVIMENTO
+              </p>
+              <p className="text-justify m-auto mt-2 text-gray-300">
+                {numberProject.description}
+              </p>
+            </>
+          ) : (
+            <p className="text-justify m-auto mt-2 text-gray-300">
+              {numberProject.description}
+            </p>
+          )}
+        </div>
         <Link to={numberProject.siteUrl} target="_blank">
           <div className="mx-auto mt-2 py-1 px-10 rounded-md text-white bg-purple-600">
             Visitar o site

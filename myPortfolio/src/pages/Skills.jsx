@@ -36,13 +36,13 @@ export function Skills() {
     },
     {
       imageUrls: [image5, image6, image7, image8],
-      siteUrl: "https://example.com/site2",
+      siteUrl: "https://lista-de-tarefas-five-zeta.vercel.app/",
       description:
         "Criei uma Lista de Tarefas responsiva e funcional usando HTML, CSS e JavaScript. O projeto permite adicionar, editar e remover tarefas, oferecendo uma experiência intuitiva em diversos dispositivos.",
     },
     {
       imageUrls: [image9, image10, image11, image12, image13],
-      siteUrl: "https://example.com/site3",
+      siteUrl: "https://my-portfolio-azure-sigma.vercel.app/",
       description:
         "Este foi meu primeiro portfólio pessoal, desenvolvido para aprimorar minhas habilidades e conhecimentos. Utilizei Bootstrap para um design responsivo e estilizado, e combinei JavaScript, HTML e CSS para criar uma interface intuitiva. Esse projeto foi fundamental para melhorar meu conhecimento e experiência no desenvolvimento web.",
     },
