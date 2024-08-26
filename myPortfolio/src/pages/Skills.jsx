@@ -15,10 +15,10 @@ import image7 from "/src/images/projects/listaDeTarefas/img3.png";
 import image8 from "/src/images/projects/listaDeTarefas/img4.png";
 
 import image9 from "/src/images/projects/myFirstPortfolio/img1.png";
-import image10 from "/src/images/projects/myFirstPortfolio/img1.png";
-import image11 from "/src/images/projects/myFirstPortfolio/img1.png";
-import image12 from "/src/images/projects/myFirstPortfolio/img1.png";
-import image13 from "/src/images/projects/myFirstPortfolio/img1.png";
+import image10 from "/src/images/projects/myFirstPortfolio/img2.png";
+import image11 from "/src/images/projects/myFirstPortfolio/img3.png";
+import image12 from "/src/images/projects/myFirstPortfolio/img4.png";
+import image13 from "/src/images/projects/myFirstPortfolio/img5.png";
 
 export function Skills() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
