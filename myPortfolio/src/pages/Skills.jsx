@@ -55,8 +55,8 @@ export function Skills() {
   ];
 
   return (
-    <div className="relative w-full max-lg:h-screen lg:min-h-[40rem] lg:max-h-[50rem] lg:rounded-2xl max-lg:border-none border-1 border-zinc-700 bg-zinc-800">
-      <nav className="absolute flex w-full max-lg:justify-between justify-end">
+    <div className="relative w-full max-lg:h-full lg:min-h-[40rem] lg:max-h-[50rem] lg:rounded-2xl max-lg:border-none border-1 border-zinc-700 bg-zinc-800">
+      <nav className="absolute flex w-full max-lg:h-full max-lg:justify-between justify-end">
         <span onClick={toggleSidebar} className="lg:hidden p-4">
           <MenuIcon />
         </span>
@@ -76,9 +76,9 @@ export function Skills() {
         </ul>
 
         <div
-          className={`lg:hidden z-50 absolute top-0 ${sidebarVisible ? "translate-x-0" : "-translate-x-[101%]"} duration-300 flex w-full h-screen`}
+          className={`lg:hidden z-50 absolute top-0 ${sidebarVisible ? "translate-x-0" : "-translate-x-[101%]"} duration-300 flex w-full h-full`}
         >
-          <div className="flex flex-col w-5/6 h-screen bg-zinc-800">
+          <div className="flex flex-col w-5/6 h-full bg-zinc-800">
             <div className="absolute flex w-full max-lg:justify-start ">
               <span onClick={toggleSidebar} className="p-4">
                 <CloseMenu />
@@ -88,11 +88,11 @@ export function Skills() {
           </div>
           <div
             onClick={toggleSidebar}
-            className="w-1/6 h-screen bg-zinc-950 duration-1000 bg-opacity-50"
+            className="w-1/6 h-full bg-zinc-950 duration-1000 bg-opacity-50"
           ></div>
         </div>
       </nav>
-      <div className="w-full max-lg:max-h-[91%] max-h-[92%] max-lg:mt-20 mt-10 overflow-y-auto scroll-bar">
+      <div className="w-full max-lg:max-h-[91%] max-h-[93%] max-lg:mt-20 mt-10 overflow-y-auto scroll-bar">
         <div className="flex flex-col w-full gap-3 px-5">
           <h1 className="text-white text-3xl font-semibold">Projetos</h1>
           <span className="w-10 h-1 bg-purple-500"></span>
