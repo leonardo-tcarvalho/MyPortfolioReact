@@ -8,7 +8,7 @@ export function CardProject({ numberProject }) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false, // Remove as setas laterais
+    arrows: false,
   };
 
   return (
