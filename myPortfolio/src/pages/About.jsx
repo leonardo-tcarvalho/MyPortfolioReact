@@ -6,6 +6,7 @@ import IconJS from "../images/IconJS.png";
 import IconPHP from "../images/IconPHP.png";
 import IconSQL from "../images/IconSQL.png";
 import IconReactJS from "../images/IconReactJS.png";
+import IconRedux from "../images/IconRedux.png";
 import IconMongoDB from "../images/IconMongoDB.png";
 import { MenuIcon } from "../images/MenuIcon";
 import { CloseMenu } from "../images/CloseMenu";
@@ -77,29 +78,71 @@ export function About() {
             </h1>
             <span className="w-14 h-1 bg-purple-500"></span>
             <div className="flex flex-wrap justify-center gap-10 mt-5">
-              <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10">
-                <img src={IconTS} alt="TypeScript" className="w-16 h-16" />
-                <p className="text-white">TypeScript</p>
+              <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10 hover:cursor-pointer group">
+                <img
+                  src={IconTS}
+                  alt="TypeScript"
+                  className="w-16 h-16 group-hover:cursor-pointer"
+                />
+                <p className="text-white group-hover:cursor-pointer">
+                  TypeScript
+                </p>
               </div>
-              <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10">
-                <img src={IconJS} alt="" className="w-16 h-16" />
-                <p className="text-white">JavaScript</p>
+              <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10 hover:cursor-pointer group">
+                <img
+                  src={IconJS}
+                  alt=""
+                  className="w-16 h-16 group-hover:cursor-pointer"
+                />
+                <p className="text-white group-hover:cursor-pointer">
+                  JavaScript
+                </p>
               </div>
-              <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10">
-                <img src={IconReactJS} alt="" className="w-18 h-16" />
-                <p className="text-white">React JS</p>
+              <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10 hover:cursor-pointer group">
+                <img
+                  src={IconReactJS}
+                  alt=""
+                  className="w-18 h-16 group-hover:cursor-pointer"
+                />
+                <p className="text-white group-hover:cursor-pointer">
+                  React JS
+                </p>
               </div>
-              <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10">
-                <img src={IconPHP} alt="" className="w-20 h-16" />
-                <p className="text-white">PHP</p>
+              <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10 hover:cursor-pointer group">
+                <img
+                  src={IconRedux}
+                  alt=""
+                  className="w-18 h-16 group-hover:cursor-pointer"
+                />
+                <p className="text-white group-hover:cursor-pointer">Redux</p>
               </div>
-              <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10">
-                <img src={IconSQL} alt="" className="w-16 h-16" />
-                <p className="text-white">SQL Server</p>
+              <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10 hover:cursor-pointer group">
+                <img
+                  src={IconPHP}
+                  alt=""
+                  className="w-20 h-16 group-hover:cursor-pointer"
+                />
+                <p className="text-white group-hover:cursor-pointer">PHP</p>
               </div>
-              <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10">
-                <img src={IconMongoDB} alt="" className="w-16 h-16" />
-                <p className="text-white">Mongo DB</p>
+              <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10 hover:cursor-pointer group">
+                <img
+                  src={IconSQL}
+                  alt=""
+                  className="w-16 h-16 group-hover:cursor-pointer"
+                />
+                <p className="text-white group-hover:cursor-pointer">
+                  SQL Server
+                </p>
+              </div>
+              <div className="flex flex-col items-center border-2 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-125 hover:shadow-10 hover:cursor-pointer group">
+                <img
+                  src={IconMongoDB}
+                  alt=""
+                  className="w-16 h-16 group-hover:cursor-pointer"
+                />
+                <p className="text-white group-hover:cursor-pointer">
+                  Mongo DB
+                </p>
               </div>
             </div>
           </div>

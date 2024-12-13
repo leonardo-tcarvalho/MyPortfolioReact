@@ -1,13 +1,13 @@
 [
   {
     "imageUrls": [
-      "/src/images/projects/appChamadaAlunos/img1.png",
-      "/src/images/projects/appChamadaAlunos/img2.png",
-      "/src/images/projects/appChamadaAlunos/img3.png",
-      "/src/images/projects/appChamadaAlunos/img4.png"
+      "/src/images/projects/appMarketplaceNFT/img1.png",
+      "/src/images/projects/appMarketplaceNFT/img2.png",
+      "/src/images/projects/appMarketplaceNFT/img3.png",
+      "/src/images/projects/appMarketplaceNFT/img4.png"
     ],
-    "siteUrl": "https://app-chamada-alunos.vercel.app/",
-    "description": "Desenvolvi um site para controle de chamadas utilizando React, SQL, PHP e Tailwind. O aplicativo permite o cadastro de alunos, docentes e turmas. Fui responsável por criar as relações entre as tabelas, implementar um design responsivo e desenvolver o back-end para realizar operações CRUD."
+    "siteUrl": "https://starsoft-frontend-challenge-nine.vercel.app/",
+    "description": "Desenvolvi a interface de um marketplace de vendas de NFTs utilizando React, Redux e SASS. O projeto incluiu a criação de páginas responsivas, estilização personalizada e uma arquitetura bem estruturada para gerenciamento de estado global com Redux. Fui responsável por implementar componentes reutilizáveis, garantir a consistência visual e proporcionar uma experiência fluida e intuitiva para os usuários."
   },
   {
     "imageUrls": [
