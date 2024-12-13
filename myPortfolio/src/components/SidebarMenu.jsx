@@ -13,7 +13,7 @@ export function SidebarMenu() {
           Leonardo Carvalho
         </p>
         <div className="bg-purple-600 px-4 py-1 rounded-md shadow-md">
-          <p className="text-center text-zinc-200 ">Desenvolvedor Web</p>
+          <p className="text-center text-zinc-200 ">Desenvolvedor FullStack</p>
         </div>
       </div>
       <span className="w-full h-1 my-5 border-b-1 border-zinc-700"></span>
@@ -37,7 +37,7 @@ export function SidebarMenu() {
       >
         <Link to="/">
           <p className="max-sm:w-52 w-96 text-center px-4 py-2 text-xl text-zinc-300 bg-purple-600 rounded-md duration-150 hover:bg-zinc-300 hover:text-purple-600 hover:duration-150">
-            Sobre
+            Sobre Mim
           </p>
         </Link>
         <Link to="/skills">
