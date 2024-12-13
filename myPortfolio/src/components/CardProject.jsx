@@ -53,7 +53,7 @@ export function CardProject({ numberProject }) {
           )}
         </div>
         <Link to={numberProject.siteUrl} target="_blank">
-          <div className="mx-auto mt-2 py-1 px-10 rounded-md text-white bg-purple-600">
+          <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-purple-600">
             Visitar o site
           </div>
         </Link>
