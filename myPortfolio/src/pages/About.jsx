@@ -27,12 +27,12 @@ export function About() {
         <ul className="max-lg:hidden flex justify-center items-center w-2/4 h-10 bg-zinc-800 border-zinc-700 border-1 rounded-tr-2xl rounded-bl-2xl shadow-5">
           <Link className="w-2/4 h-full" to="/">
             <span className="flex h-full items-center justify-center rounded-bl-2xl shadow-inner shadow-zinc-900 hover:shadow-inner hover:shadow-zinc-900">
-              <p className="text-xl text-zinc-300">Sobre</p>
+              <p className="text-xl text-purple-500">Sobre</p>
             </span>
           </Link>
           <Link className="w-2/4 h-full" to="/skills">
             <span className="flex h-full items-center justify-center hover:shadow-inner hover:shadow-zinc-900 hover:duration-150 group">
-              <p className="text-xl text-purple-500 group-hover:text-zinc-300">
+              <p className="text-xl text-zinc-300 group-hover:text-purple-500">
                 Projetos
               </p>
             </span>
