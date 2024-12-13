@@ -36,12 +36,12 @@ export function SidebarMenu() {
       "
       >
         <Link to="/">
-          <div className="max-sm:w-52 w-96 text-center px-4 py-2 bg-purple-600 rounded-md hover:shadow-inner hover:bg-white hover:duration-300">
-            <p className="text-xl text-zinc-300">Sobre</p>
-          </div>
+          <p className="max-sm:w-52 w-96 text-center px-4 py-2 text-xl text-zinc-300 bg-purple-600 rounded-md duration-150 hover:bg-zinc-300 hover:text-purple-600 hover:duration-150">
+            Sobre
+          </p>
         </Link>
         <Link to="/skills">
-          <p className="max-sm:w-52 w-96 text-center px-4 py-2 text-xl text-zinc-300 bg-purple-600 rounded-md">
+          <p className="max-sm:w-52 w-96 text-center px-4 py-2 text-xl text-zinc-300 bg-purple-600 rounded-md duration-150 hover:bg-zinc-300 hover:text-purple-600 hover:duration-150">
             Projetos
           </p>
         </Link>
