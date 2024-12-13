@@ -4,6 +4,7 @@ import { MenuIcon } from "../images/MenuIcon";
 import { CloseMenu } from "../images/CloseMenu";
 import { SidebarMenu } from "../components/SidebarMenu";
 import { CardProject, projects } from "../components/CardProject";
+import PropTypes from "prop-types";
 
 export function Skills() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
@@ -66,3 +67,7 @@ export function Skills() {
     </div>
   );
 }
+
+CardProject.propTypes = {
+  numberProject: PropTypes.number.isRequired,
+};

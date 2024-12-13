@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
+import PropTypes from "prop-types";
 
 const projects = [
   {
@@ -126,3 +127,7 @@ export function CardProject({ numberProject }) {
     </div>
   );
 }
+
+CardProject.propTypes = {
+  numberProject: PropTypes.number.isRequired,
+};
