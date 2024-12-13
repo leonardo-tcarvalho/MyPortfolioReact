@@ -1,19 +1,12 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { MenuIcon } from "../images/MenuIcon";
 import { CloseMenu } from "../images/CloseMenu";
 import { SidebarMenu } from "../components/SidebarMenu";
-import { CardProject } from "../components/CardProject";
-
-import projectData from "../data/projects.json";
+import { CardProject, projects } from "../components/CardProject";
 
 export function Skills() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    setData(projectData);
-  }, []);
 
   const toggleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
@@ -64,8 +57,8 @@ export function Skills() {
         </div>
         <div className="flex justify-center w-full p-5">
           <div className="grid grid-cols-1 items-center gap-10 max-lg:w-full w-4/5">
-            {data.map((project, index) => (
-              <CardProject key={index} numberProject={project} />
+            {projects.map((project, index) => (
+              <CardProject key={index} numberProject={index} />
             ))}
           </div>
         </div>
