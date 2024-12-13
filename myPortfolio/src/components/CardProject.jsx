@@ -44,7 +44,7 @@ const projects = [
     imageUrls: [],
     siteUrl: "undefined",
     description:
-      "Este projeto é um site desenvolvido para um corretor de imóveis, utilizando React e Tailwind. A aplicação oferece uma plataforma intuitiva e eficiente para o gerenciamento de propriedades. O corretor pode adicionar, editar e remover imóveis, cada um com detalhes como fotos, preços e descrições. O design responsivo garante que o site seja visualmente atraente e funcional em qualquer dispositivo. O deploy e gerenciamento da aplicação são realizados no Google Cloud, assegurando alta disponibilidade e desempenho confiável.",
+      "Estou desenvolvendo um app mobile usando React Native, TypeScript, SQL Server, PHP para APIs e Styled Components. No projeto, estou cuidando da criação da interface, deixando-a moderna e fácil de usar, além de integrar o app com uma API que fiz para gerenciar os dados no banco. Também estou organizando as rotas e conectando o front-end com o back-end de forma prática e eficiente.",
     repositoryUrl: "https://github.com/leonardo-tcarvalho",
   },
 ];
@@ -97,23 +97,31 @@ export function CardProject({ numberProject }) {
               <p className="text-justify m-auto mt-2 text-gray-300">
                 {project.description}
               </p>
+              <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-purple-600 cursor-not-allowed">
+                Visitar o site
+              </div>
+              <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-zinc-600 cursor-not-allowed">
+                Ver Repositório
+              </div>
             </>
           ) : (
-            <p className="text-justify m-auto mt-2 text-gray-300">
-              {project.description}
-            </p>
+            <>
+              <p className="text-justify m-auto mt-2 text-gray-300">
+                {project.description}
+              </p>
+              <Link to={project.siteUrl} target="_blank">
+                <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-purple-600">
+                  Visitar o site
+                </div>
+              </Link>
+              <Link to={project.repositoryUrl} target="_blank">
+                <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-zinc-600">
+                  Ver Repositório
+                </div>
+              </Link>
+            </>
           )}
         </div>
-        <Link to={project.siteUrl} target="_blank">
-          <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-purple-600">
-            Visitar o site
-          </div>
-        </Link>
-        <Link to={project.repositoryUrl} target="_blank">
-          <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-zinc-600">
-            Ver Repositório
-          </div>
-        </Link>
       </div>
     </div>
   );

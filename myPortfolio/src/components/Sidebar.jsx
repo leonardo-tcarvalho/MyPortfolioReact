@@ -11,7 +11,7 @@ export function Sidebar() {
         Leonardo Carvalho
       </p>
       <div className="mt-4 bg-purple-600 px-4 py-1 rounded-md shadow-md">
-        <p className="text-zinc-200 font-bold">Desenvolvedor Web</p>
+        <p className="text-zinc-200 font-bold">Desenvolvedor FullStack</p>
       </div>
       <span className="w-full h-1 my-5 border-b-1 border-zinc-700"></span>
       <div className="flex flex-col w-full gap-5"></div>

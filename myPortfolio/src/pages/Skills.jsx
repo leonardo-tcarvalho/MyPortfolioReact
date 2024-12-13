@@ -13,7 +13,7 @@ export function Skills() {
   };
 
   return (
-    <div className="relative w-full max-lg:h-full lg:min-h-[40rem] lg:max-h-[50rem] lg:rounded-2xl max-lg:border-none border-1 border-zinc-700 bg-zinc-800">
+    <div className="relative w-full lg:min-h-[35rem] lg:max-h-[42rem] lg:rounded-2xl max-lg:border-none border-1 border-zinc-700 bg-zinc-800">
       <nav className="absolute flex w-full max-lg:h-full max-lg:justify-between justify-end">
         <span onClick={toggleSidebar} className="lg:hidden p-4">
           <MenuIcon />
@@ -22,7 +22,7 @@ export function Skills() {
           <Link className="w-2/4 h-full" to="/">
             <span className="flex h-full items-center justify-center rounded-bl-2xl hover:shadow-inner hover:shadow-zinc-900 hover:duration-150 group">
               <p className="text-xl text-zinc-300 group-hover:text-purple-500">
-                Sobre
+                Sobre Mim
               </p>
             </span>
           </Link>
