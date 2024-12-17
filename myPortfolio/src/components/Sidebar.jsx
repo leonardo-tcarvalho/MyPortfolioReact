@@ -1,7 +1,7 @@
 import { Avatar } from "./Avatar";
-import { Instagram } from "/images/Instagram";
-import { Linkedin } from "/images/Linkedin";
-import { Github } from "/images/Github";
+import { Instagram } from "../images/Instagram";
+import { Linkedin } from "../images/Linkedin";
+import { Github } from "../images/Github";
 
 export function Sidebar() {
   return (
