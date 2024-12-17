@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { MenuIcon } from "../images/MenuIcon";
-import { CloseMenu } from "../images/CloseMenu";
+import { MenuIcon } from "/images/MenuIcon";
+import { CloseMenu } from "/images/CloseMenu";
 import { SidebarMenu } from "../components/SidebarMenu";
 import { CardProject, projects } from "../components/CardProject";
 import PropTypes from "prop-types";

@@ -5,10 +5,10 @@ import PropTypes from "prop-types";
 const projects = [
   {
     imageUrls: [
-      "/src/images/projects/appMarketplaceNFT/img1.png",
-      "/src/images/projects/appMarketplaceNFT/img2.png",
-      "/src/images/projects/appMarketplaceNFT/img3.png",
-      "/src/images/projects/appMarketplaceNFT/img4.png",
+      "/images/projects/appMarketplaceNFT/img1.png",
+      "/images/projects/appMarketplaceNFT/img2.png",
+      "/images/projects/appMarketplaceNFT/img3.png",
+      "/images/projects/appMarketplaceNFT/img4.png",
     ],
     siteUrl: "https://starsoft-frontend-challenge-nine.vercel.app/",
     description:
@@ -18,10 +18,10 @@ const projects = [
   },
   {
     imageUrls: [
-      "/src/images/projects/listaDeTarefas/img1.png",
-      "/src/images/projects/listaDeTarefas/img2.png",
-      "/src/images/projects/listaDeTarefas/img3.png",
-      "/src/images/projects/listaDeTarefas/img4.png",
+      "/images/projects/listaDeTarefas/img1.png",
+      "/images/projects/listaDeTarefas/img2.png",
+      "/images/projects/listaDeTarefas/img3.png",
+      "/images/projects/listaDeTarefas/img4.png",
     ],
     siteUrl: "https://lista-de-tarefas-five-zeta.vercel.app/",
     description:
@@ -30,11 +30,11 @@ const projects = [
   },
   {
     imageUrls: [
-      "/src/images/projects/myFirstPortfolio/img1.png",
-      "/src/images/projects/myFirstPortfolio/img2.png",
-      "/src/images/projects/myFirstPortfolio/img3.png",
-      "/src/images/projects/myFirstPortfolio/img4.png",
-      "/src/images/projects/myFirstPortfolio/img5.png",
+      "/images/projects/myFirstPortfolio/img1.png",
+      "/images/projects/myFirstPortfolio/img2.png",
+      "/images/projects/myFirstPortfolio/img3.png",
+      "/images/projects/myFirstPortfolio/img4.png",
+      "/images/projects/myFirstPortfolio/img5.png",
     ],
     siteUrl: "https://my-portfolio-azure-sigma.vercel.app/",
     description:
