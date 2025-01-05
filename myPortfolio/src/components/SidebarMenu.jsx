@@ -6,7 +6,7 @@ import { Github } from "../images/Github";
 
 export function SidebarMenu() {
   return (
-    <aside className="flex flex-col items-center w-full h-full p-4 mt-5 bg-zinc-800">
+    <aside className="flex flex-col items-center w-full h-full p-4 pt-10 bg-zinc-800">
       <div className="flex flex-col items-center gap-5">
         <Avatar />
         <p className="text-center text-zinc-300 text-3xl font-bold">

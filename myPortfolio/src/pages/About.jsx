@@ -25,8 +25,8 @@ export function About() {
 
   return (
     <div className="relative w-full max-lg:h-full min-h-screen lg:min-h-[35rem] lg:max-h-[42rem] lg:rounded-2xl max-xl:border-none border-1 border-zinc-700 bg-zinc-800">
-      <nav className="absolute flex w-full max-lg:h-full  max-lg:justify-between justify-end">
-        <span onClick={toggleSidebar} className="lg:hidden p-4">
+      <nav className="flex w-full max-lg:h-full max-lg:justify-between justify-end">
+        <span onClick={toggleSidebar} className="lg:hidden p-4 h-20">
           <MenuIcon />
         </span>
         <ul className="max-lg:hidden flex justify-center items-center w-2/4 h-10 bg-zinc-800 border-zinc-700 border-1 rounded-tr-2xl rounded-bl-2xl shadow-5">
@@ -54,13 +54,12 @@ export function About() {
             </div>
             <SidebarMenu />
           </div>
-          <div
-            onClick={toggleSidebar}
-            className="w-1/6 h-full bg-zinc-950 duration-1000 bg-opacity-50"
-          ></div>
         </div>
+        <div
+          className={`absolute w-screen h-full duration-300 bg-zinc-950 opacity-50 ${sidebarVisible ? "" : "hidden"}`}
+        ></div>
       </nav>
-      <div className="w-full max-lg:h-[80%] max-h-[92%] max-lg:mt-20 mt-10 overflow-y-auto scroll-bar">
+      <div className="w-full max-lg:h-[80%] max-h-[92%] overflow-y-auto scroll-bar">
         <div className="flex flex-col w-full gap-3 px-5">
           <h1 className="text-white text-3xl font-semibold">Sobre Mim</h1>
           <span className="w-10 h-1 bg-purple-500"></span>
