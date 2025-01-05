@@ -81,8 +81,7 @@ export function About() {
             <br />
             <br />
             Estou aberto a oportunidades e desafios que me permitam crescer
-            profissionalmente. Sinta-se à vontade para se conectar, ficarei
-            feliz em compartilhar minhas experiências.
+            profissionalmente.
           </p>
           <div className="flex flex-col w-full gap-3 mt-5">
             <h1 className="text-white text-2xl font-semibold">
