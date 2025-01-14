@@ -30,14 +30,14 @@ const projects = [
       myFirstPortfolio6,
       myFirstPortfolio7,
     ],
-    siteUrl: "https://my-first-portfolio.leonardotc.me/",
+    siteUrl: "http://my-first-portfolio.leonardotc.me/",
     description:
       "Este foi meu primeiro portfólio pessoal, desenvolvido para aprimorar minhas habilidades e conhecimentos. Utilizei Bootstrap para um design responsivo e estilizado, e combinei JavaScript, HTML e CSS para criar uma interface intuitiva. Esse projeto foi fundamental para melhorar meu conhecimento e experiência no desenvolvimento web.",
     repositoryUrl: "https://github.com/leonardo-tcarvalho/MyPortfolio",
   },
   {
     imageUrls: [listaTarefas1, listaTarefas2, listaTarefas3, listaTarefas4],
-    siteUrl: "https://to-do-list.leonardotc.me/",
+    siteUrl: "http://to-do-list.leonardotc.me/",
     description:
       "Criei uma Lista de Tarefas responsiva e funcional usando HTML, CSS e JavaScript. O projeto permite adicionar, editar e remover tarefas, oferecendo uma experiência intuitiva em diversos dispositivos.",
     repositoryUrl: "https://github.com/leonardo-tcarvalho/ListaDeTarefas",
@@ -52,7 +52,7 @@ const projects = [
   },
   {
     imageUrls: [contractCalculator1, contractCalculator2, contractCalculator3],
-    siteUrl: "https://contract-calculator.leonardotc.me/",
+    siteUrl: "http://contract-calculator.leonardotc.me/",
     description:
       "Desenvolvi um site web para cálculo de contratos de funcionários do Quinto Andar, conforme solicitado por um cliente. O projeto foi construído utilizando HTML, CSS e JavaScript puro, sem o uso de frameworks ou APIs. Fui responsável pela criação de uma interface simples e responsiva, que permite aos usuários calcular os contratos de forma rápida e precisa. O foco foi garantir uma experiência de uso intuitiva, com um layout claro e otimizado para diversos dispositivos.",
     repositoryUrl: "https://github.com/leonardo-tcarvalho/calculadoraContratos",
