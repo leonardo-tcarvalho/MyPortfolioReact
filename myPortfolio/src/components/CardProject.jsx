@@ -8,24 +8,27 @@ import listaTarefas1 from "../images/projects/listaDeTarefas/img1.png";
 import listaTarefas2 from "../images/projects/listaDeTarefas/img2.png";
 import listaTarefas3 from "../images/projects/listaDeTarefas/img3.png";
 import listaTarefas4 from "../images/projects/listaDeTarefas/img4.png";
-import firstPortfolio1 from "../images/projects/myFirstPortfolio/img1.png";
-import firstPortfolio2 from "../images/projects/myFirstPortfolio/img2.png";
-import firstPortfolio3 from "../images/projects/myFirstPortfolio/img3.png";
-import firstPortfolio4 from "../images/projects/myFirstPortfolio/img4.png";
-import firstPortfolio5 from "../images/projects/myFirstPortfolio/img5.png";
-import firstPortfolio6 from "../images/projects/myFirstPortfolio/img6.png";
-import firstPortfolio7 from "../images/projects/myFirstPortfolio/img7.png";
+import myFirstPortfolio1 from "../images/projects/myFirstPortfolio/img1.png";
+import myFirstPortfolio2 from "../images/projects/myFirstPortfolio/img2.png";
+import myFirstPortfolio3 from "../images/projects/myFirstPortfolio/img3.png";
+import myFirstPortfolio4 from "../images/projects/myFirstPortfolio/img4.png";
+import myFirstPortfolio5 from "../images/projects/myFirstPortfolio/img5.png";
+import myFirstPortfolio6 from "../images/projects/myFirstPortfolio/img6.png";
+import myFirstPortfolio7 from "../images/projects/myFirstPortfolio/img7.png";
+import contractCalculator1 from "../images/projects/contractCalculator/img1.png";
+import contractCalculator2 from "../images/projects/contractCalculator/img2.png";
+import contractCalculator3 from "../images/projects/contractCalculator/img3.png";
 
 const projects = [
   {
     imageUrls: [
-      firstPortfolio1,
-      firstPortfolio2,
-      firstPortfolio3,
-      firstPortfolio4,
-      firstPortfolio5,
-      firstPortfolio6,
-      firstPortfolio7,
+      myFirstPortfolio1,
+      myFirstPortfolio2,
+      myFirstPortfolio3,
+      myFirstPortfolio4,
+      myFirstPortfolio5,
+      myFirstPortfolio6,
+      myFirstPortfolio7,
     ],
     siteUrl: "https://my-portfolio-azure-sigma.vercel.app/",
     description:
@@ -46,6 +49,13 @@ const projects = [
       "Desenvolvi a interface de um marketplace de vendas de NFTs utilizando React, Redux e SASS. O projeto incluiu a criação de páginas responsivas, estilização personalizada e uma arquitetura bem estruturada para gerenciamento de estado global com Redux. Fui responsável por implementar componentes reutilizáveis, garantir a consistência visual e proporcionar uma experiência fluida e intuitiva para os usuários.",
     repositoryUrl:
       "https://github.com/leonardo-tcarvalho/starsoft-frontend-challenge",
+  },
+  {
+    imageUrls: [contractCalculator1, contractCalculator2, contractCalculator3],
+    siteUrl: "https://starsoft-frontend-challenge-nine.vercel.app/",
+    description:
+      "Desenvolvi um site web para cálculo de contratos de funcionários do Quinto Andar, conforme solicitado por um cliente. O projeto foi construído utilizando HTML, CSS e JavaScript puro, sem o uso de frameworks ou APIs. Fui responsável pela criação de uma interface simples e responsiva, que permite aos usuários calcular os contratos de forma rápida e precisa. O foco foi garantir uma experiência de uso intuitiva, com um layout claro e otimizado para diversos dispositivos.",
+    repositoryUrl: "https://github.com/leonardo-tcarvalho/calculadoraContratos",
   },
   {
     imageUrls: [],
