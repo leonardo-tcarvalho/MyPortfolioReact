@@ -30,7 +30,7 @@ const projects = [
       myFirstPortfolio6,
       myFirstPortfolio7,
     ],
-    siteUrl: "https://leonardotc.me/",
+    siteUrl: "https://my-first-portfolio.leonardotc.me/",
     description:
       "Este foi meu primeiro portfólio pessoal, desenvolvido para aprimorar minhas habilidades e conhecimentos. Utilizei Bootstrap para um design responsivo e estilizado, e combinei JavaScript, HTML e CSS para criar uma interface intuitiva. Esse projeto foi fundamental para melhorar meu conhecimento e experiência no desenvolvimento web.",
     repositoryUrl: "https://github.com/leonardo-tcarvalho/MyPortfolio",
