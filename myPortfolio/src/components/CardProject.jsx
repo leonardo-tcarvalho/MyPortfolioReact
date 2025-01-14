@@ -1,42 +1,51 @@
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import PropTypes from "prop-types";
-import img1 from "../images/projects/appMarketplaceNFT/img1.png";
-import img2 from "../images/projects/appMarketplaceNFT/img2.png";
-import img3 from "../images/projects/appMarketplaceNFT/img3.png";
-import img4 from "../images/projects/appMarketplaceNFT/img4.png";
-import img5 from "../images/projects/listaDeTarefas/img1.png";
-import img6 from "../images/projects/listaDeTarefas/img2.png";
-import img7 from "../images/projects/listaDeTarefas/img3.png";
-import img8 from "../images/projects/listaDeTarefas/img4.png";
-import img9 from "../images/projects/myFirstPortfolio/img1.png";
-import img10 from "../images/projects/myFirstPortfolio/img2.png";
-import img11 from "../images/projects/myFirstPortfolio/img3.png";
-import img12 from "../images/projects/myFirstPortfolio/img4.png";
-import img13 from "../images/projects/myFirstPortfolio/img5.png";
+import appMarketplaceNFT1 from "../images/projects/appMarketplaceNFT/img1.png";
+import appMarketplaceNFT2 from "../images/projects/appMarketplaceNFT/img2.png";
+import appMarketplaceNFT3 from "../images/projects/appMarketplaceNFT/img3.png";
+import listaTarefas1 from "../images/projects/listaDeTarefas/img1.png";
+import listaTarefas2 from "../images/projects/listaDeTarefas/img2.png";
+import listaTarefas3 from "../images/projects/listaDeTarefas/img3.png";
+import listaTarefas4 from "../images/projects/listaDeTarefas/img4.png";
+import firstPortfolio1 from "../images/projects/myFirstPortfolio/img1.png";
+import firstPortfolio2 from "../images/projects/myFirstPortfolio/img2.png";
+import firstPortfolio3 from "../images/projects/myFirstPortfolio/img3.png";
+import firstPortfolio4 from "../images/projects/myFirstPortfolio/img4.png";
+import firstPortfolio5 from "../images/projects/myFirstPortfolio/img5.png";
+import firstPortfolio6 from "../images/projects/myFirstPortfolio/img6.png";
+import firstPortfolio7 from "../images/projects/myFirstPortfolio/img7.png";
 
 const projects = [
   {
-    imageUrls: [img1, img2, img3, img4],
-    siteUrl: "https://starsoft-frontend-challenge-nine.vercel.app/",
+    imageUrls: [
+      firstPortfolio1,
+      firstPortfolio2,
+      firstPortfolio3,
+      firstPortfolio4,
+      firstPortfolio5,
+      firstPortfolio6,
+      firstPortfolio7,
+    ],
+    siteUrl: "https://my-portfolio-azure-sigma.vercel.app/",
     description:
-      "Desenvolvi a interface de um marketplace de vendas de NFTs utilizando React, Redux e SASS. O projeto incluiu a criação de páginas responsivas, estilização personalizada e uma arquitetura bem estruturada para gerenciamento de estado global com Redux. Fui responsável por implementar componentes reutilizáveis, garantir a consistência visual e proporcionar uma experiência fluida e intuitiva para os usuários.",
-    repositoryUrl:
-      "https://github.com/leonardo-tcarvalho/starsoft-frontend-challenge",
+      "Este foi meu primeiro portfólio pessoal, desenvolvido para aprimorar minhas habilidades e conhecimentos. Utilizei Bootstrap para um design responsivo e estilizado, e combinei JavaScript, HTML e CSS para criar uma interface intuitiva. Esse projeto foi fundamental para melhorar meu conhecimento e experiência no desenvolvimento web.",
+    repositoryUrl: "https://github.com/leonardo-tcarvalho/MyPortfolio",
   },
   {
-    imageUrls: [img5, img6, img7, img8],
+    imageUrls: [listaTarefas1, listaTarefas2, listaTarefas3, listaTarefas4],
     siteUrl: "https://lista-de-tarefas-five-zeta.vercel.app/",
     description:
       "Criei uma Lista de Tarefas responsiva e funcional usando HTML, CSS e JavaScript. O projeto permite adicionar, editar e remover tarefas, oferecendo uma experiência intuitiva em diversos dispositivos.",
     repositoryUrl: "https://github.com/leonardo-tcarvalho/ListaDeTarefas",
   },
   {
-    imageUrls: [img9, img10, img11, img12, img13],
-    siteUrl: "https://my-portfolio-azure-sigma.vercel.app/",
+    imageUrls: [appMarketplaceNFT1, appMarketplaceNFT2, appMarketplaceNFT3],
+    siteUrl: "https://starsoft-frontend-challenge-nine.vercel.app/",
     description:
-      "Este foi meu primeiro portfólio pessoal, desenvolvido para aprimorar minhas habilidades e conhecimentos. Utilizei Bootstrap para um design responsivo e estilizado, e combinei JavaScript, HTML e CSS para criar uma interface intuitiva. Esse projeto foi fundamental para melhorar meu conhecimento e experiência no desenvolvimento web.",
-    repositoryUrl: "https://github.com/leonardo-tcarvalho/MyPortfolio",
+      "Desenvolvi a interface de um marketplace de vendas de NFTs utilizando React, Redux e SASS. O projeto incluiu a criação de páginas responsivas, estilização personalizada e uma arquitetura bem estruturada para gerenciamento de estado global com Redux. Fui responsável por implementar componentes reutilizáveis, garantir a consistência visual e proporcionar uma experiência fluida e intuitiva para os usuários.",
+    repositoryUrl:
+      "https://github.com/leonardo-tcarvalho/starsoft-frontend-challenge",
   },
   {
     imageUrls: [],
