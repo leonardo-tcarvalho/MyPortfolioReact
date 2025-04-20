@@ -5,13 +5,13 @@ import { Github } from "../images/Github";
 
 export function Sidebar() {
   return (
-    <aside className="max-lg:hidden flex flex-col items-center max-sm:w-full sm:w-[17rem] min-h-[23rem] sm:max-h-[20rem] border-1 border-zinc-700 rounded-xl p-4 bg-zinc-800">
+    <aside className="max-lg:hidden flex flex-col items-center max-sm:w-full sm:w-[17rem] min-h-[23rem] sm:max-h-[20rem] border-1 border-zinc-700 rounded-xl p-4 bg-zinc-900">
       <Avatar />
-      <p className="text-center text-zinc-300 text-2xl font-bold">
+      <p className="text-center text-gray-100 text-2xl font-bold">
         Leonardo Carvalho
       </p>
-      <div className="mt-4 bg-purple-600 px-4 py-1 rounded-md shadow-md">
-        <p className="text-zinc-200 font-bold">Desenvolvedor FullStack</p>
+      <div className="mt-4 bg-rose-600 px-4 py-1 rounded-md shadow-md">
+        <p className="text-white font-medium">Desenvolvedor FullStack</p>
       </div>
       <span className="w-full h-1 my-5 border-b-1 border-zinc-700"></span>
       <div className="flex flex-col w-full gap-5"></div>

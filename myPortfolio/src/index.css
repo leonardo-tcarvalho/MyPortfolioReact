@@ -8,7 +8,7 @@
 }
 
 .border-gradient {
-  background-image: linear-gradient(to bottom right, white, #27272a, #27272a);
+  background-image: linear-gradient(to bottom right, white, #18181b, #18181b);
 }
 
 .scroll-bar::-webkit-scrollbar {
@@ -18,20 +18,20 @@
 }
 
 .scroll-bar::-webkit-scrollbar-thumb {
-  background-color: #7c3aed;
+  background-color: #e11d48; /* Substituído pela cor principal */
   border-radius: 10px;
 }
 
 .scroll-bar::-webkit-scrollbar-thumb:hover {
-  background-color: #a855f7;
+  background-color: #be123c; /* Tom mais escuro para hover */
 }
 
 .custom-slider .slick-dots li button:before {
-  color: #a855f7;
+  color: #e11d48; /* Cor principal para os dots do slider */
 }
 
 .custom-slider .slick-dots li.slick-active button:before {
-  color: #a855f7;
+  color: #be123c; /* Tom mais escuro para dot ativo */
 }
 
 @keyframes spin {

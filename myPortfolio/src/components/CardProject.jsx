@@ -81,11 +81,11 @@ export function CardProject({ numberProject }) {
   const project = projects[numberProject];
 
   return (
-    <div className="w-full h-auto bg-zinc-950 border-1 border-zinc-600 p-4 rounded-lg shadow-lg">
+    <div className="w-full h-auto bg-zinc-950 border-1 border-zinc-700 p-4 rounded-lg shadow-lg">
       <div className="relative">
         {project.siteUrl === "undefined" ? (
           <div className="inset-0 flex items-center justify-center p-10 rounded-lg">
-            <div className="w-40 h-40 border-t-4 border-purple-600 border-solid rounded-full animate-spin"></div>
+            <div className="w-40 h-40 border-t-4 border-rose-600 border-solid rounded-full animate-spin"></div>
           </div>
         ) : (
           <Slider {...settings} className="custom-slider">
@@ -108,16 +108,16 @@ export function CardProject({ numberProject }) {
         <div>
           {project.siteUrl === "undefined" ? (
             <>
-              <p className="text-center bg-red-600 px-10 py-2">
+              <p className="text-center bg-rose-600 px-10 py-2">
                 SITE EM DESENVOLVIMENTO
               </p>
               <p className="text-justify m-auto mt-2 text-gray-300">
                 {project.description}
               </p>
-              <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-purple-600 cursor-not-allowed">
+              <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-gray-700 cursor-not-allowed">
                 Visitar o site
               </div>
-              <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-zinc-600 cursor-not-allowed">
+              <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-zinc-700 cursor-not-allowed">
                 Ver Repositório
               </div>
             </>
@@ -127,12 +127,12 @@ export function CardProject({ numberProject }) {
                 {project.description}
               </p>
               <Link to={project.siteUrl} target="_blank">
-                <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-purple-600">
+                <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-rose-600 hover:bg-rose-700 transition-colors">
                   Visitar o site
                 </div>
               </Link>
               <Link to={project.repositoryUrl} target="_blank">
-                <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-zinc-600">
+                <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-zinc-700 hover:bg-zinc-600 transition-colors">
                   Ver Repositório
                 </div>
               </Link>

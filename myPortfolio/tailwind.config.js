@@ -6,6 +6,13 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        accent: {
+          DEFAULT: '#e11d48', // Cor principal (rosa/vermelho)
+          hover: '#be123c', // Tom mais escuro para hover
+          light: '#fecdd3', // Versão clara para contraste
+        }
+      },
       gridTemplateColumns: {
         "1/4": "1fr 4fr"
       },

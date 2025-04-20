@@ -1,7 +1,7 @@
 export function Linkedin() {
   return (
     <svg
-      className="hover:scale-110 hover:duration-300 duration-200 stroke-purple-500 hover:stroke-zinc-300"
+      className="hover:scale-110 hover:duration-300 duration-200 stroke-rose-300 hover:stroke-white"
       xmlns="http://www.w3.org/2000/svg"
       width="32"
       height="32"

@@ -6,7 +6,7 @@ export function MenuIcon() {
       height="40"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="#a855f7"
+      stroke="#e11d48"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
