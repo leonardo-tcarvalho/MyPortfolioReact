@@ -44,7 +44,7 @@ const projects = [
   },
   {
     imageUrls: [appMarketplaceNFT1, appMarketplaceNFT2, appMarketplaceNFT3],
-    siteUrl: "https://starsoft-challenge.leonardotc.me/",
+    siteUrl: "undefined",
     description:
       "Desenvolvi a interface de um marketplace de vendas de NFTs utilizando React, Redux e SASS. O projeto incluiu a criação de páginas responsivas, estilização personalizada e uma arquitetura bem estruturada para gerenciamento de estado global com Redux. Fui responsável por implementar componentes reutilizáveis, garantir a consistência visual e proporcionar uma experiência fluida e intuitiva para os usuários.",
     repositoryUrl:
