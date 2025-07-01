@@ -18,6 +18,10 @@ import myFirstPortfolio7 from "../images/projects/myFirstPortfolio/img7.png";
 import contractCalculator1 from "../images/projects/contractCalculator/img1.png";
 import contractCalculator2 from "../images/projects/contractCalculator/img2.png";
 import contractCalculator3 from "../images/projects/contractCalculator/img3.png";
+import dockerDeploy1 from "../images/projects/dockerDeploy/img1.png";
+import dockerDeploy2 from "../images/projects/dockerDeploy/img2.png";
+import dockerDeploy3 from "../images/projects/dockerDeploy/img3.png";
+import dockerDeploy4 from "../images/projects/dockerDeploy/img3.png";
 
 const projects = [
   {
@@ -58,7 +62,7 @@ const projects = [
     repositoryUrl: "https://github.com/leonardo-tcarvalho/calculadoraContratos",
   },
   {
-    imageUrls: [],
+    imageUrls: [dockerDeploy1, dockerDeploy2, dockerDeploy3, dockerDeploy4],
     siteUrl: "withoutdeploy",
     description:
       "Implementei um processo completo de automação de deploy utilizando GitLab CI/CD em ambiente local, com o WSL2 simulando múltiplas máquinas virtuais Linux. A escolha pelo WSL2 permitiu emular uma infraestrutura de servidores sem recorrer a provedores de nuvem como AWS, Azure ou Google Cloud. Durante a configuração, enfrentei conflitos de rede devido ao compartilhamento de IP entre instâncias, o que impedia a comunicação via SSH. Para resolver, alterei as portas internas do serviço SSH e utilizei o PowerShell para redirecionar corretamente as conexões entre as VMs. O resultado foi uma infraestrutura funcional de CI/CD totalmente local, capaz de realizar deploys automatizados sem dependências externas.",
