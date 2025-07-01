@@ -44,7 +44,7 @@ const projects = [
   },
   {
     imageUrls: [appMarketplaceNFT1, appMarketplaceNFT2, appMarketplaceNFT3],
-    siteUrl: "undefined",
+    siteUrl: "withoutdeploy",
     description:
       "Desenvolvi a interface de um marketplace de vendas de NFTs utilizando React, Redux e SASS. O projeto incluiu a criação de páginas responsivas, estilização personalizada e uma arquitetura bem estruturada para gerenciamento de estado global com Redux. Fui responsável por implementar componentes reutilizáveis, garantir a consistência visual e proporcionar uma experiência fluida e intuitiva para os usuários.",
     repositoryUrl:
@@ -109,7 +109,7 @@ export function CardProject({ numberProject }) {
           {project.siteUrl === "undefined" ? (
             <>
               <p className="text-center bg-rose-600 px-10 py-2">
-                SITE EM DESENVOLVIMENTO
+                Projeto em Desenvolvimento
               </p>
               <p className="text-justify m-auto mt-2 text-gray-300">
                 {project.description}
@@ -120,6 +120,17 @@ export function CardProject({ numberProject }) {
               <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-zinc-700 cursor-not-allowed">
                 Ver Repositório
               </div>
+            </>
+          ) : project.siteUrl === "withoutdeploy" ? (
+            <>
+              <p className="text-justify m-auto mt-2 text-gray-300">
+                {project.description}
+              </p>
+              <Link to={project.repositoryUrl} target="_blank">
+                <div className="min-w-48 mx-auto mt-2 py-1 px-10 rounded-md text-center text-white bg-zinc-700 hover:bg-zinc-600 transition-colors">
+                  Ver Repositório
+                </div>
+              </Link>
             </>
           ) : (
             <>
