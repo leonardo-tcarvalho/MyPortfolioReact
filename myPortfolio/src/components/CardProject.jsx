@@ -59,10 +59,17 @@ const projects = [
   },
   {
     imageUrls: [],
-    siteUrl: "undefined",
+    siteUrl: "withoutdeploy",
     description:
-      "Estou desenvolvendo um app mobile usando React Native, TypeScript, SQL Server, PHP para APIs e Styled Components. No projeto, estou cuidando da criação da interface, deixando-a moderna e fácil de usar, além de integrar o app com uma API que fiz para gerenciar os dados no banco. Também estou organizando as rotas e conectando o front-end com o back-end de forma prática e eficiente.",
-    repositoryUrl: "https://github.com/leonardo-tcarvalho",
+      "Implementei um processo completo de automação de deploy utilizando GitLab CI/CD em ambiente local, com o WSL2 simulando múltiplas máquinas virtuais Linux. A escolha pelo WSL2 permitiu emular uma infraestrutura de servidores sem recorrer a provedores de nuvem como AWS, Azure ou Google Cloud. Durante a configuração, enfrentei conflitos de rede devido ao compartilhamento de IP entre instâncias, o que impedia a comunicação via SSH. Para resolver, alterei as portas internas do serviço SSH e utilizei o PowerShell para redirecionar corretamente as conexões entre as VMs. O resultado foi uma infraestrutura funcional de CI/CD totalmente local, capaz de realizar deploys automatizados sem dependências externas.",
+    repositoryUrl: "https://github.com/leonardo-tcarvalho/GitlabCI-CD",
+  },
+  {
+    imageUrls: [],
+    siteUrl: "withoutdeploy",
+    description:
+      "Desenvolvi uma pipeline de deploy contínuo utilizando GitHub Actions e Docker, com integração automatizada em dois ambientes distintos hospedados na Azure: teste e produção. A cada aprovação de pull request, a imagem da aplicação é reconstruída e o container do ambiente de produção é atualizado automaticamente, assegurando a entrega contínua da versão mais recente sem intervenção manual. Para garantir a segurança, utilizei GitHub Secrets no gerenciamento de credenciais. Também integrei um sistema baseado em inteligência artificial para geração automática de páginas HTML, otimizando os testes visuais durante o processo de deploy.",
+    repositoryUrl: "https://github.com/leonardo-tcarvalho/DockerDeploy",
   },
 ];
 
