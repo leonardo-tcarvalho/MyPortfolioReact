@@ -7,7 +7,6 @@ import IconPHP from "../images/IconPHP.png";
 import IconSQL from "../images/IconSQL.png";
 import IconReactJS from "../images/IconReactJS.png";
 import IconRedux from "../images/IconRedux.png";
-import IconJenkins from "../images/IconJenkins.png";
 import IconGitlab from "../images/IconGitlab.png";
 import IconMongoDB from "../images/IconMongoDB.png";
 import IconAWS from "../images/IconAWS.png";
@@ -163,14 +162,6 @@ export function About() {
             </h1>
             <span className="w-14 h-1 bg-rose-600"></span>
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-center gap-10 mt-5">
-              <div className="flex flex-col justify-center items-center border-2 border-zinc-700 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-110 hover:shadow-10 hover:border-rose-600 hover:cursor-pointer group">
-                <img
-                  src={IconJenkins}
-                  alt="Jenkins"
-                  className="w-16 h-20 group-hover:cursor-pointer"
-                />
-                <p className="text-white group-hover:cursor-pointer">Jenkins</p>
-              </div>
               <div className="flex flex-col justify-center items-center border-2 border-zinc-700 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-110 hover:shadow-10 hover:border-rose-600 hover:cursor-pointer group">
                 <img
                   src={IconGitlab}

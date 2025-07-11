@@ -21,7 +21,9 @@ import contractCalculator3 from "../images/projects/contractCalculator/img3.png"
 import dockerDeploy1 from "../images/projects/dockerDeploy/img1.png";
 import dockerDeploy2 from "../images/projects/dockerDeploy/img2.png";
 import dockerDeploy3 from "../images/projects/dockerDeploy/img3.png";
-import dockerDeploy4 from "../images/projects/dockerDeploy/img3.png";
+import dockerDeploy4 from "../images/projects/dockerDeploy/img4.png";
+import gitlabCICD1 from "../images/projects/gitlabCICD/img1.png";
+import gitlabCICD2 from "../images/projects/gitlabCICD/img2.png";
 
 const projects = [
   {
@@ -69,7 +71,7 @@ const projects = [
     repositoryUrl: "https://github.com/leonardo-tcarvalho/GitlabCI-CD",
   },
   {
-    imageUrls: [],
+    imageUrls: [gitlabCICD1, gitlabCICD2],
     siteUrl: "withoutdeploy",
     description:
       "Desenvolvi uma pipeline de deploy contínuo utilizando GitHub Actions e Docker, com integração automatizada em dois ambientes distintos hospedados na Azure: teste e produção. A cada aprovação de pull request, a imagem da aplicação é reconstruída e o container do ambiente de produção é atualizado automaticamente, assegurando a entrega contínua da versão mais recente sem intervenção manual. Para garantir a segurança, utilizei GitHub Secrets no gerenciamento de credenciais. Também integrei um sistema baseado em inteligência artificial para geração automática de páginas HTML, otimizando os testes visuais durante o processo de deploy.",
