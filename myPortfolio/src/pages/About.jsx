@@ -65,22 +65,11 @@ export function About() {
         </div>
         <div className="flex flex-col w-full gap-10 p-5">
           <p className="text-white text-[1.2em]">
-            Sou Leonardo, tenho 23 anos e sou Desenvolvedor Fullstack,
-            atualmente no último ano de Ciência da Computação. Tenho 1 ano de
-            experiência como Desenvolvedor Fullstack, o que me permitiu
-            aprimorar minhas habilidades e entender melhor as necessidades do
-            mercado.
-            <br />
-            <br />
-            Tenho experiência na criação de APIs, interfaces responsivas e
-            interativas utilizando React, JavaScript, PHP, Tailwind e SASS.
-            Também trabalho com bancos de dados como SQL Server e MongoDB. Estou
-            sempre em busca de novos aprendizados, com foco em melhorar meu
-            inglês e expandir meus conhecimentos em Cloud e DevOps.
-            <br />
-            <br />
-            Estou aberto a oportunidades e desafios que me permitam crescer
-            profissionalmente.
+          Me chamo Leonardo, tenho 24 e sou Desenvolvedor Fullstack, atualmente no último semestre do curso de Ciência da Computação. Possuo 2 anos de experiência profissional atuando no desenvolvimento de sistemas e aplicações web e mobile, com foco em soluções performáticas e alinhadas às necessidades do negócio.
+          <br>
+          Possuo conhecimento também em Python, TypeScript, Tailwind CSS, SASS, Docker e MongoDB, e aplico boas práticas de versionamento com Git. Tenho investido na expansão dos meus conhecimentos em Cloud Computing e DevOps.
+          <br>
+          Sou um profissional comunicativo, proativo e colaborativo, com forte orientação à entrega de valor e à melhoria contínua. Estou aberto a oportunidades e desafios que me permitam crescer profissionalmente. Sinta-se à vontade para se conectar, ficarei feliz em compartilhar minhas experiências.
           </p>
           <div className="flex flex-col w-full gap-3 mt-5">
             <h1 className="text-white text-2xl font-semibold">
