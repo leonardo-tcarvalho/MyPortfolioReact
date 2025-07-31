@@ -12,6 +12,7 @@ import IconMongoDB from "../images/IconMongoDB.png";
 import IconAWS from "../images/IconAWS.png";
 import IconDocker from "../images/IconDocker.png";
 import IconLinux from "../images/IconLinux.png";
+import IconPython from "../images/IconPython.png";
 import { MenuIcon } from "../images/MenuIcon";
 import { CloseMenu } from "../images/CloseMenu";
 import { SidebarMenu } from "../components/SidebarMenu";
@@ -128,6 +129,14 @@ export function About() {
                   className="w-20 h-16 group-hover:cursor-pointer"
                 />
                 <p className="text-white group-hover:cursor-pointer">PHP</p>
+              </div>
+              <div className="flex flex-col justify-center items-center border-2 border-zinc-700 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-110  hover:shadow-10 hover:border-rose-600 hover:cursor-pointer group">
+                <img
+                  src={IconPython}
+                  alt="Python"
+                  className="w-16 h-16 group-hover:cursor-pointer"
+                />
+                <p className="text-white group-hover:cursor-pointer">Python</p>
               </div>
               <div className="flex flex-col justify-center items-center border-2 border-zinc-700 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-110  hover:shadow-10 hover:border-rose-600 hover:cursor-pointer group">
                 <img
