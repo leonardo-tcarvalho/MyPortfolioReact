@@ -11,6 +11,7 @@ import IconGitlab from "../images/IconGitlab.png";
 import IconMongoDB from "../images/IconMongoDB.png";
 import IconAWS from "../images/IconAWS.png";
 import IconDocker from "../images/IconDocker.png";
+import IconLinux from "../images/IconLinux.png";
 import { MenuIcon } from "../images/MenuIcon";
 import { CloseMenu } from "../images/CloseMenu";
 import { SidebarMenu } from "../components/SidebarMenu";
@@ -55,7 +56,7 @@ export function About() {
           </div>
         </div>
         <div
-          className={`absolute w-screen h-full duration-300 bg-zinc-950 opacity-50 ${sidebarVisible ? "" : "hidden"}`}
+          className={`absolute w-full h-full duration-300 bg-zinc-950 opacity-50 ${sidebarVisible ? "" : "hidden"}`}
         ></div>
       </nav>
       <div className="w-full max-lg:h-[80%] max-h-[92%] overflow-y-auto scroll-bar">
@@ -64,19 +65,24 @@ export function About() {
           <span className="w-10 h-1 bg-rose-600"></span>
         </div>
         <div className="flex flex-col w-full gap-10 p-5">
-          <p className="text-white text-[1.2em]">
-          Me chamo Leonardo, tenho 24 e sou Desenvolvedor Fullstack, atualmente no último semestre do curso de Ciência da Computação. Possuo 2 anos de experiência profissional atuando no desenvolvimento de sistemas e aplicações web e mobile, com foco em soluções performáticas e alinhadas às necessidades do negócio.
-          <br>
-          Possuo conhecimento também em Python, TypeScript, Tailwind CSS, SASS, Docker e MongoDB, e aplico boas práticas de versionamento com Git. Tenho investido na expansão dos meus conhecimentos em Cloud Computing e DevOps.
-          <br>
-          Sou um profissional comunicativo, proativo e colaborativo, com forte orientação à entrega de valor e à melhoria contínua. Estou aberto a oportunidades e desafios que me permitam crescer profissionalmente. Sinta-se à vontade para se conectar, ficarei feliz em compartilhar minhas experiências.
-          </p>
+          <div className="text-white text-[1.2em] space-y-4">
+            <p>
+              Me chamo Leonardo, tenho 24 e sou Desenvolvedor Fullstack, atualmente no último semestre do curso de Ciência da Computação. Possuo 2 anos de experiência profissional atuando no desenvolvimento de sistemas e aplicações web e mobile, com foco em soluções performáticas e alinhadas às necessidades do negócio.
+            </p>
+            <p>
+              Minha atual função tem sido o Desenvolvimento de APIs em PHP, com atenção à arquitetura, segurança e manutenção de código limpo. Desenvolvimento de aplicações Web com React e Mobile com React Native, priorizando interfaces responsivas, desempenho e experiência do usuário. Manipulação intensiva de dados com SQL Server, sendo responsável diariamente por gerar relatórios, criação de procedures, views, otimização de queries e manutenção de rotinas de extração de dados.
+            </p>
+            <p>
+              Sou um profissional comunicativo, proativo e colaborativo, com forte orientação à entrega de valor e à melhoria contínua. Estou aberto a oportunidades e desafios que me permitam crescer profissionalmente. Sinta-se à vontade para se conectar, ficarei feliz em compartilhar minhas experiências.
+            </p>
+          </div>
           <div className="flex flex-col w-full gap-3 mt-5">
             <h1 className="text-white text-2xl font-semibold">
               Ferramentas Utilizadas
             </h1>
             <span className="w-14 h-1 bg-rose-600"></span>
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-center gap-10 mt-5">
+            
               <div className="flex flex-col items-center border-2 border-zinc-700 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-110 hover:shadow-10 hover:border-rose-600 hover:cursor-pointer group">
                 <img
                   src={IconTS}
@@ -90,7 +96,7 @@ export function About() {
               <div className="flex flex-col justify-center items-center border-2 border-zinc-700 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-110  hover:shadow-10 hover:border-rose-600 hover:cursor-pointer group">
                 <img
                   src={IconJS}
-                  alt=""
+                  alt="JavaScript"
                   className="w-16 h-16 group-hover:cursor-pointer"
                 />
                 <p className="text-white group-hover:cursor-pointer">
@@ -100,7 +106,7 @@ export function About() {
               <div className="flex flex-col justify-center items-center border-2 border-zinc-700 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-110  hover:shadow-10 hover:border-rose-600 hover:cursor-pointer group">
                 <img
                   src={IconReactJS}
-                  alt=""
+                  alt="React JS"
                   className="w-18 h-16 group-hover:cursor-pointer"
                 />
                 <p className="text-white group-hover:cursor-pointer">
@@ -110,7 +116,7 @@ export function About() {
               <div className="flex flex-col justify-center items-center border-2 border-zinc-700 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-110  hover:shadow-10 hover:border-rose-600 hover:cursor-pointer group">
                 <img
                   src={IconRedux}
-                  alt=""
+                  alt="Redux"
                   className="w-18 h-16 group-hover:cursor-pointer"
                 />
                 <p className="text-white group-hover:cursor-pointer">Redux</p>
@@ -118,7 +124,7 @@ export function About() {
               <div className="flex flex-col justify-center items-center border-2 border-zinc-700 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-110  hover:shadow-10 hover:border-rose-600 hover:cursor-pointer group">
                 <img
                   src={IconPHP}
-                  alt=""
+                  alt="PHP"
                   className="w-20 h-16 group-hover:cursor-pointer"
                 />
                 <p className="text-white group-hover:cursor-pointer">PHP</p>
@@ -126,7 +132,7 @@ export function About() {
               <div className="flex flex-col justify-center items-center border-2 border-zinc-700 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-110  hover:shadow-10 hover:border-rose-600 hover:cursor-pointer group">
                 <img
                   src={IconSQL}
-                  alt=""
+                  alt="SQL Server"
                   className="w-16 h-16 group-hover:cursor-pointer"
                 />
                 <p className="text-white group-hover:cursor-pointer">
@@ -136,12 +142,28 @@ export function About() {
               <div className="flex flex-col justify-center items-center border-2 border-zinc-700 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-110  hover:shadow-10 hover:border-rose-600 hover:cursor-pointer group">
                 <img
                   src={IconMongoDB}
-                  alt=""
+                  alt="Mongo DB"
                   className="w-16 h-16 group-hover:cursor-pointer"
                 />
                 <p className="text-white group-hover:cursor-pointer">
                   Mongo DB
                 </p>
+              </div>
+                <div className="flex flex-col justify-center items-center border-2 border-zinc-700 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-110 hover:shadow-10 hover:border-rose-600 hover:cursor-pointer group">
+                <img
+                  src={IconDocker}
+                  alt="Docker"
+                  className="w-20 h-16 group-hover:cursor-pointer"
+                />
+                <p className="text-white group-hover:cursor-pointer">Docker</p>
+              </div>
+                <div className="flex flex-col justify-center items-center border-2 border-zinc-700 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-110 hover:shadow-10 hover:border-rose-600 hover:cursor-pointer group">
+                <img
+                  src={IconLinux}
+                  alt="Linux"
+                  className="w-20 h-16 group-hover:cursor-pointer"
+                />
+                <p className="text-white group-hover:cursor-pointer">Linux</p>
               </div>
             </div>
           </div>
@@ -170,14 +192,6 @@ export function About() {
                 <p className="text-white group-hover:cursor-pointer">
                   AWS Cloud
                 </p>
-              </div>
-              <div className="flex flex-col justify-center items-center border-2 border-zinc-700 rounded-xl p-3 duration-300 shadow-5 gap-2 hover:duration-300 hover:scale-110 hover:shadow-10 hover:border-rose-600 hover:cursor-pointer group">
-                <img
-                  src={IconDocker}
-                  alt="Docker"
-                  className="w-20 h-16 group-hover:cursor-pointer"
-                />
-                <p className="text-white group-hover:cursor-pointer">Docker</p>
               </div>
             </div>
           </div>
