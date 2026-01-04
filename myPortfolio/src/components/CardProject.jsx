@@ -25,7 +25,7 @@ import dockerDeploy4 from "../images/projects/dockerDeploy/img4.png";
 import gitlabCICD1 from "../images/projects/gitlabCICD/img1.png";
 import gitlabCICD2 from "../images/projects/gitlabCICD/img2.png";
 
-const BASE_DOMAIN = "leonardotc.me";
+const BASE_DOMAIN = "tadeus.tech";
 
 const projects = [
   {
