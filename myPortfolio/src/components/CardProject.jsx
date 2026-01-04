@@ -25,7 +25,8 @@ import dockerDeploy4 from "../images/projects/dockerDeploy/img4.png";
 import gitlabCICD1 from "../images/projects/gitlabCICD/img1.png";
 import gitlabCICD2 from "../images/projects/gitlabCICD/img2.png";
 
-const BASE_DOMAIN = "tadeus.tech";
+const BASE_DOMAIN = "leonardotc.me";
+
 const projects = [
   {
     imageUrls: [
@@ -38,38 +39,44 @@ const projects = [
       myFirstPortfolio7,
     ],
     siteUrl: `http://my-first-portfolio.${BASE_DOMAIN}/`,
-    description: "...",
+    description:
+      "Este foi meu primeiro portfólio pessoal, desenvolvido para aprimorar minhas habilidades e conhecimentos. Utilizei Bootstrap para um design responsivo e estilizado, e combinei JavaScript, HTML e CSS para criar uma interface intuitiva. Esse projeto foi fundamental para melhorar meu conhecimento e experiência no desenvolvimento web.",
     repositoryUrl: "https://github.com/leonardo-tcarvalho/MyPortfolio",
   },
   {
     imageUrls: [listaTarefas1, listaTarefas2, listaTarefas3, listaTarefas4],
     siteUrl: `http://to-do-list.${BASE_DOMAIN}/`,
-    description: "...",
+    description:
+      "Criei uma Lista de Tarefas responsiva e funcional usando HTML, CSS e JavaScript. O projeto permite adicionar, editar e remover tarefas, oferecendo uma experiência intuitiva em diversos dispositivos.",
     repositoryUrl: "https://github.com/leonardo-tcarvalho/ListaDeTarefas",
   },
   {
     imageUrls: [appMarketplaceNFT1, appMarketplaceNFT2, appMarketplaceNFT3],
     siteUrl: "withoutdeploy",
-    description: "...",
+    description:
+      "Desenvolvi a interface de um marketplace de vendas de NFTs utilizando React, Redux e SASS. O projeto incluiu a criação de páginas responsivas, estilização personalizada e uma arquitetura bem estruturada para gerenciamento de estado global com Redux. Fui responsável por implementar componentes reutilizáveis, garantir a consistência visual e proporcionar uma experiência fluida e intuitiva para os usuários.",
     repositoryUrl:
       "https://github.com/leonardo-tcarvalho/starsoft-frontend-challenge",
   },
   {
     imageUrls: [contractCalculator1, contractCalculator2, contractCalculator3],
     siteUrl: `http://contract-calculator.${BASE_DOMAIN}/`,
-    description: "...",
+    description:
+      "Desenvolvi um site web para cálculo de contratos de funcionários do Quinto Andar, conforme solicitado por um cliente. O projeto foi construído utilizando HTML, CSS e JavaScript puro, sem o uso de frameworks ou APIs. Fui responsável pela criação de uma interface simples e responsiva, que permite aos usuários calcular os contratos de forma rápida e precisa. O foco foi garantir uma experiência de uso intuitiva, com um layout claro e otimizado para diversos dispositivos.",
     repositoryUrl: "https://github.com/leonardo-tcarvalho/calculadoraContratos",
   },
   {
     imageUrls: [dockerDeploy1, dockerDeploy2, dockerDeploy3, dockerDeploy4],
     siteUrl: "withoutdeploy",
-    description: "...",
+    description:
+      "Implementei um processo completo de automação de deploy utilizando GitLab CI/CD em ambiente local, com o WSL2 simulando múltiplas máquinas virtuais Linux. A escolha pelo WSL2 permitiu emular uma infraestrutura de servidores sem recorrer a provedores de nuvem como AWS, Azure ou Google Cloud. Durante a configuração, enfrentei conflitos de rede devido ao compartilhamento de IP entre instâncias, o que impedia a comunicação via SSH. Para resolver, alterei as portas internas do serviço SSH e utilizei o PowerShell para redirecionar corretamente as conexões entre as VMs. O resultado foi uma infraestrutura funcional de CI/CD totalmente local, capaz de realizar deploys automatizados sem dependências externas.",
     repositoryUrl: "https://github.com/leonardo-tcarvalho/GitlabCI-CD",
   },
   {
     imageUrls: [gitlabCICD1, gitlabCICD2],
     siteUrl: "withoutdeploy",
-    description: "...",
+    description:
+      "Desenvolvi uma pipeline de deploy contínuo utilizando GitHub Actions e Docker, com integração automatizada em dois ambientes distintos hospedados na Azure: teste e produção. A cada aprovação de pull request, a imagem da aplicação é reconstruída e o container do ambiente de produção é atualizado automaticamente, assegurando a entrega contínua da versão mais recente sem intervenção manual. Para garantir a segurança, utilizei GitHub Secrets no gerenciamento de credenciais. Também integrei um sistema baseado em inteligência artificial para geração automática de páginas HTML, otimizando os testes visuais durante o processo de deploy.",
     repositoryUrl: "https://github.com/leonardo-tcarvalho/DockerDeploy",
   },
 ];
