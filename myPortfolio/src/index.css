@@ -5,40 +5,282 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.border-gradient {
-  background-image: linear-gradient(to bottom right, white, #18181b, #18181b);
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* ======= Gradient Utilities (all 6 OKLCH colors) ======= */
+.gradient-accent {
+  background: linear-gradient(
+    90deg,
+    oklch(42.4% 0.199 265.638),
+    oklch(62.3% 0.214 259.815),
+    oklch(78.9% 0.154 211.53),
+    oklch(69.6% 0.17 162.48),
+    oklch(49.6% 0.265 301.924),
+    oklch(38% 0.189 293.745)
+  );
+}
+
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    oklch(62.3% 0.214 259.815),
+    oklch(78.9% 0.154 211.53),
+    oklch(69.6% 0.17 162.48)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ======= Avatar Ring (conic gradient with all 6 colors) ======= */
+.avatar-ring {
+  position: relative;
+  padding: 3px;
+  border-radius: 1.25rem;
+}
+
+.avatar-ring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 1.25rem;
+  background: conic-gradient(
+    oklch(42.4% 0.199 265.638),
+    oklch(62.3% 0.214 259.815),
+    oklch(78.9% 0.154 211.53),
+    oklch(69.6% 0.17 162.48),
+    oklch(49.6% 0.265 301.924),
+    oklch(38% 0.189 293.745),
+    oklch(42.4% 0.199 265.638)
+  );
+  animation: ring-rotate 4s linear infinite;
+  z-index: 0;
+}
+
+.avatar-ring > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes ring-rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* ======= Card Glow Effect ======= */
+.card-glow {
+  transition:
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 20px oklch(62.3% 0.214 259.815 / 0.08);
+  border-color: oklch(62.3% 0.214 259.815 / 0.3);
+}
+
+.dark .card-glow:hover {
+  box-shadow: 0 0 25px oklch(62.3% 0.214 259.815 / 0.15);
+  border-color: oklch(62.3% 0.214 259.815 / 0.4);
+}
+
+/* ======= Buttons ======= */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  background: linear-gradient(
+    135deg,
+    oklch(42.4% 0.199 265.638),
+    oklch(62.3% 0.214 259.815)
+  );
+}
+
+.btn-primary:hover {
+  box-shadow: 0 4px 20px oklch(62.3% 0.214 259.815 / 0.3);
+  transform: translateY(-1px);
+}
+
+/* ======= Nav Active Indicator ======= */
+.nav-active {
+  position: relative;
+}
+
+.nav-active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 60%;
+  border-radius: 0 4px 4px 0;
+  background: linear-gradient(
+    180deg,
+    oklch(62.3% 0.214 259.815),
+    oklch(78.9% 0.154 211.53)
+  );
+}
+
+/* ======= Nav Active Background ======= */
+.nav-active-bg {
+  background: oklch(62.3% 0.214 259.815 / 0.08);
+}
+
+.dark .nav-active-bg {
+  background: oklch(62.3% 0.214 259.815 / 0.1);
+}
+
+/* ======= Tag Styles ======= */
+.tag-ai {
+  background: oklch(69.6% 0.17 162.48 / 0.1);
+  border: 1px solid oklch(69.6% 0.17 162.48 / 0.25);
+}
+
+.tag-devops {
+  background: oklch(49.6% 0.265 301.924 / 0.1);
+  border: 1px solid oklch(49.6% 0.265 301.924 / 0.25);
+}
+
+.tag-dev {
+  background: oklch(62.3% 0.214 259.815 / 0.1);
+  border: 1px solid oklch(62.3% 0.214 259.815 / 0.25);
+}
+
+/* ======= Badge Accent ======= */
+.badge-accent {
+  background: linear-gradient(
+    135deg,
+    oklch(42.4% 0.199 265.638 / 0.1),
+    oklch(49.6% 0.265 301.924 / 0.1)
+  );
+  border: 1px solid oklch(62.3% 0.214 259.815 / 0.2);
+}
+
+/* ======= Scrollbar ======= */
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: oklch(62.3% 0.214 259.815 / 0.3);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: oklch(62.3% 0.214 259.815 / 0.6);
 }
 
 .scroll-bar::-webkit-scrollbar {
-  position: absolute;
-  width: 5px;
-  height: 10px;
+  width: 4px;
+}
+
+.scroll-bar::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 .scroll-bar::-webkit-scrollbar-thumb {
-  background-color: #e11d48; /* Substituído pela cor principal */
+  background: oklch(62.3% 0.214 259.815 / 0.4);
   border-radius: 10px;
 }
 
 .scroll-bar::-webkit-scrollbar-thumb:hover {
-  background-color: #be123c; /* Tom mais escuro para hover */
+  background: oklch(62.3% 0.214 259.815 / 0.7);
 }
 
+/* ======= Slider Dots ======= */
 .custom-slider .slick-dots li button:before {
-  color: #e11d48; /* Cor principal para os dots do slider */
+  color: oklch(62.3% 0.214 259.815) !important;
 }
 
 .custom-slider .slick-dots li.slick-active button:before {
-  color: #be123c; /* Tom mais escuro para dot ativo */
+  color: oklch(78.9% 0.154 211.53) !important;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+/* ======= Background Grid Pattern ======= */
+.bg-grid-pattern {
+  background-image: linear-gradient(
+      rgba(148, 163, 184, 0.04) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* ======= Decorative Orbs (using OKLCH colors) ======= */
+.orb-1 {
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: oklch(62.3% 0.214 259.815 / 0.03);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.orb-2 {
+  position: fixed;
+  bottom: 10%;
+  left: 5%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: oklch(49.6% 0.265 301.924 / 0.03);
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ======= Section Line Gradients ======= */
+.line-teal {
+  background: linear-gradient(
+    90deg,
+    oklch(69.6% 0.17 162.48 / 0.5),
+    transparent
+  );
+}
+
+.line-blue {
+  background: linear-gradient(
+    90deg,
+    oklch(62.3% 0.214 259.815 / 0.5),
+    transparent
+  );
+}
+
+.line-violet {
+  background: linear-gradient(
+    90deg,
+    oklch(49.6% 0.265 301.924 / 0.5),
+    transparent
+  );
 }

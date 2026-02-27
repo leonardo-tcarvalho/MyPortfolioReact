@@ -1,49 +1,117 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Avatar } from "./Avatar";
+import { ThemeToggle } from "./ThemeToggle";
 import { Instagram } from "../images/Instagram";
 import { Linkedin } from "../images/Linkedin";
 import { Github } from "../images/Github";
 
-export function SidebarMenu() {
+const navLinks = [
+  { path: "/", label: "Sobre Mim", icon: "01" },
+  { path: "/skills", label: "Projetos", icon: "02" },
+];
+
+export function SidebarMenu({ onClose }) {
+  const location = useLocation();
+
   return (
-    <aside className="flex flex-col items-center w-full h-full p-4 pt-10 bg-zinc-900">
-      <div className="flex flex-col items-center gap-5">
+    <aside className="flex flex-col h-full p-6 gap-6 overflow-y-auto">
+      {/* Close button */}
+      <div className="flex justify-end">
+        <button
+          onClick={onClose}
+          className="flex items-center justify-center w-10 h-10 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+          aria-label="Fechar menu"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+      {/* Profile */}
+      <div className="flex flex-col items-center gap-4">
         <Avatar />
-        <p className="text-center text-gray-100 text-3xl font-bold">
+        <h2 className="text-2xl font-bold font-mono gradient-text">
           Leonardo Carvalho
-        </p>
-        <div className="bg-rose-600 px-4 py-1 rounded-md shadow-md">
-          <p className="text-center text-white font-medium">
-            Desenvolvedor FullStack
-          </p>
+        </h2>
+        <div className="badge-accent px-4 py-2 rounded-full text-center">
+          <span className="text-sm font-medium text-accent font-mono">
+            Full-Stack | IA & Automação
+          </span>
         </div>
       </div>
-      <span className="w-full h-1 my-5 border-b-1 border-zinc-700"></span>
-      <div className="flex justify-center gap-4 w-full">
-        <a href="https://www.instagram.com/cabelozl/" target="_blank">
+
+      <div className="h-px gradient-accent opacity-20" />
+
+      {/* Navigation */}
+      <nav className="flex flex-col gap-2">
+        {navLinks.map((link) => {
+          const isActive = location.pathname === link.path;
+          return (
+            <Link
+              key={link.path}
+              to={link.path}
+              onClick={onClose}
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl text-base font-medium transition-all duration-200 ${
+                isActive
+                  ? "nav-active-bg text-accent"
+                  : "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/50"
+              }`}
+            >
+              <span
+                className={`font-mono text-xs ${isActive ? "text-accent" : "text-slate-400 dark:text-slate-600"}`}
+              >
+                {link.icon}
+              </span>
+              {link.label}
+            </Link>
+          );
+        })}
+      </nav>
+
+      <div className="h-px bg-slate-200 dark:bg-slate-800" />
+
+      {/* Social Links */}
+      <div className="flex justify-center gap-3">
+        <a
+          href="https://www.instagram.com/cabelozl/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-2 rounded-lg text-slate-400 hover:text-accent transition-colors"
+        >
           <Instagram />
         </a>
         <a
           href="https://www.linkedin.com/in/leonardo-r-carvalho/"
           target="_blank"
+          rel="noopener noreferrer"
+          className="p-2 rounded-lg text-slate-400 hover:text-accent transition-colors"
         >
           <Linkedin />
         </a>
-        <a href="https://github.com/leonardo-tcarvalho" target="_blank">
+        <a
+          href="https://github.com/leonardo-tcarvalho"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-2 rounded-lg text-slate-400 hover:text-accent transition-colors"
+        >
           <Github />
         </a>
       </div>
-      <div className="flex flex-col items-center gap-5 w-full pt-10">
-        <Link to="/">
-          <p className="max-sm:w-52 w-96 text-center px-4 py-2 text-xl text-white bg-rose-600 rounded-md duration-150 hover:bg-rose-700 hover:text-white hover:shadow-md hover:duration-150">
-            Sobre Mim
-          </p>
-        </Link>
-        <Link to="/skills">
-          <p className="max-sm:w-52 w-96 text-center px-4 py-2 text-xl text-white bg-zinc-700 rounded-md duration-150 hover:bg-zinc-600 hover:text-white hover:shadow-md hover:duration-150">
-            Projetos
-          </p>
-        </Link>
+
+      {/* Theme Toggle */}
+      <div className="flex justify-center mt-auto">
+        <ThemeToggle />
       </div>
     </aside>
   );

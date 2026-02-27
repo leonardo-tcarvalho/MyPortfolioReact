@@ -1,34 +1,35 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+      },
       colors: {
         accent: {
-          DEFAULT: '#e11d48', // Cor principal (rosa/vermelho)
-          hover: '#be123c', // Tom mais escuro para hover
-          light: '#fecdd3', // Versão clara para contraste
-        }
+          DEFAULT: 'oklch(62.3% 0.214 259.815)',
+          cyan: 'oklch(78.9% 0.154 211.53)',
+          deep: 'oklch(42.4% 0.199 265.638)',
+          teal: 'oklch(69.6% 0.17 162.48)',
+          indigo: 'oklch(38% 0.189 293.745)',
+          violet: 'oklch(49.6% 0.265 301.924)',
+        },
       },
       gridTemplateColumns: {
-        "1/4": "1fr 4fr"
+        layout: '280px 1fr',
       },
       borderWidth: {
-        1: "1px"
-      },
-      boxShadow: {
-        5: "0px 0px 2px black",
-        10: "0px 0px 10px black"
-      },
-      dropShadow: {
-        10: "0px 0px 5px #000"
+        1: '1px',
       },
       borderRadius: {
-        "2.5xl": "1.25rem"
-      }
+        '2.5xl': '1.25rem',
+      },
     },
   },
   plugins: [],

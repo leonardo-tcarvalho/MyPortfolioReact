@@ -1,15 +1,16 @@
 export function Instagram() {
   return (
     <svg
-      className="hover:scale-110 hover:duration-300 duration-200 stroke-rose-300 hover:stroke-white"
       xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="32"
+      width="20"
+      height="20"
       viewBox="0 0 24 24"
       fill="none"
+      stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
+      className="transition-transform duration-200 hover:scale-110"
     >
       <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
